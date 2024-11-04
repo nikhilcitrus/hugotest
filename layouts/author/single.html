@@ -1,0 +1,68 @@
+{{ define "main" }}
+<section class="section cyber-author-section bg-light">
+   <div class="container cyber-author-header-container">
+      <div class="row cyber-author-header-row">
+         <div class="col-lg-12 mx-auto cyber-author-header-col">
+            <div class="cyber-channel-main-container">
+               <div class="cyber-channel-img-large-container" style="background-image: url({{ .Params.page_header_bg | absURL }});">
+                  <div class="cyber-channel-img-large-gradient"></div>
+                  <div class="cyber-channel-main-info-container">
+                     <h1>{{ .Title }}</h1>
+                     <ul class="cyber-summary-ul list-inline">
+                        <li>{{ .Params.language }}</li>
+                        <li> | </li>
+                        <li>{{ .Params.comics_count }} Documents</li>
+                        <li> | </li>
+                        <li><a href="{{ .Params.author_url }}" rel="nofollow" title="{{ .Params.author_url }}" target="_blank">{{ .Params.author_url }}</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="cyber-channel-img-small-container">
+                  {{ if .Params.Image }}
+                  <img alt="{{ .Params.image_alt }}" class="rounded-circle img-fluid mb-4" src="{{.Params.Image | relURL }}">
+                  {{ end }}
+                  <div class="cyber-channel-social-share">
+                     <ul class="list-inline">
+                        {{ range .Params.Social }}
+                        <li class="list-inline-item"><a href="{{ .link | absURL }}">
+                           <span class="icon-pentagon wow bounceIn"><em class="fa {{.icon}}"></em></span>
+                           </a>
+                        </li>
+                        {{ end }}
+                     </ul>
+                  </div><!-- Share End -->
+                  <div class="cyber-channel-description">{{ .Content }}</div> <!-- Content End -->
+                  <!-- <div style="display: none;" class="dropdown cyber-select-browse-order">
+                     <a class="dropdown-toggle yp-select-browse-order-toggle" data-toggle="dropdown">
+                     <span data-option="?order_by=create_date_desc">Sort by</span> <b class="caret"></b>
+                     </a>
+                     <select class="cyber-author-select custom-select">
+                        <option selected>Open this select menu</option>
+                        <option value="1">Date descending</option>
+                        <option value="2">Date ascending</option>
+                        <option value="3">Update Date descending</option>
+                        <option value="3">Update Date ascending</option>
+                        <option value="3">Title descending</option>
+                        <option value="3">Title ascending</option>
+                      </select>
+                  </div> -->
+   
+               </div><!--- cyber-channel-img-small-container end -->
+            </div><!--- cyber-channel-main-container end -->
+
+             
+
+         </div><!-- cyber-author-header-col end -->
+      </div><!-- cyber-author-header-row end -->
+   </div><!-- cyber-author-header-container end -->
+</section>
+<section class="section cyber-author-widget-section">
+   <div class="container cyber-author-widget-container">
+      <div class="row cyber-author-widget-row">
+
+			{{ partial "comics-author-widget.html" . }}
+
+      </div>
+   </div>
+</section>	
+{{ end }}

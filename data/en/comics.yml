@@ -1,0 +1,50 @@
+############################ Our Collection ########################
+our_collection:
+  enable : true
+  title : "Our Collection"
+  collection_item:
+    # collection item loop
+    - name : "Follow the money"
+      image : "images/comics/collection-1.png"
+      title : "The Cyber Hero Adventures"
+      cleanUrl : "https://www.yumpu.com/en/document/view/63162760/the-cyberhero-adventures-defending-your-health-view-in-full-screen-thanks-to-our-healthcare-workers-and-first-responders"
+      class : "follow-money"
+
+    # collection item loop
+    - name : "Defending YOUR Health"
+      image : "images/comics/collection-2.png"
+      title : "The Cyber Hero Adventures"
+      cleanUrl : "https://www.yumpu.com/en/document/view/63162760/the-cyberhero-adventures-defending-your-health-view-in-full-screen-thanks-to-our-healthcare-workers-and-first-responders"
+      class : "defend-health"
+
+    # collection item loop
+    - name : "The AI Sameh family to the Rescue!"
+      image : "images/comics/collection-3.png"
+      title : "The Cyber Hero Adventures"
+      cleanUrl : "https://www.yumpu.com/en/document/view/63162760/the-cyberhero-adventures-defending-your-health-view-in-full-screen-thanks-to-our-healthcare-workers-and-first-responders"
+      class : "ai-sameh"
+
+    # collection item loop
+    - name : "CyberSec Summit 2019"
+      image : "images/comics/collection-4.png"
+      title : "The Cyber Hero Adventures"
+      cleanUrl : "https://www.yumpu.com/en/document/view/63162760/the-cyberhero-adventures-defending-your-health-view-in-full-screen-thanks-to-our-healthcare-workers-and-first-responders"
+      class : "cybersec-summit"
+
+############################### hero ####################################
+hero:
+  enable : true
+  title : "Our Cyber Heroes"
+  # subtitle : "Discover and learn more about out Cyber Heroes! Get your own CYBER HERO CARTOON!"
+  # caption : "Discover"
+  count: 6
+  # hero content comes from "data/*/hero.yml" file
+
+############################### villain ####################################
+villain:
+  enable : true
+  title : "Our Cyber Villains"
+  # subtitle : "Discover and learn more about out Cyber Heroes! Get your own CYBER HERO CARTOON!"
+  # caption : "Discover"
+  count : 6
+  # hero content comes from "data/*/villain.yml" file

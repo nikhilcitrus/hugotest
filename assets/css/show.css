@@ -1,0 +1,115 @@
+.cyber-show-banner-col2 img {
+    width: 60%;
+}
+section#guest-show-section {
+    background-color: #000;
+}
+.guest-show-container h2 {
+    color: #FFFFFF;
+    font-family: "Oswald", Sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+    background: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+img.show-image {
+    width: 100%;
+}
+.guest-show-col1 p {
+    color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 2em;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+.reach-out-btn {
+    font-family: "Bebas Neue", Sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -0.3px;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #FF6969;
+    border-radius: 15px 15px 15px 15px;
+    border: 0;
+    padding: 15px 50px;
+}
+.show-upcoming-section {
+    background-color: #000;
+    text-align: center;
+    padding-top: 0;
+}
+.show-upcoming-section h2{
+    color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    /* line-height: 1.3em; */
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+.cyber-show-page-banner p.show-banner-p {
+    margin-bottom: 25px;
+}
+.show-previous-section{
+	background-color: #fff;
+    text-align: center;
+    padding-top: 35px;
+}
+.show-previous-section h2 {
+    color: #000;
+    font-family: "Poppins", Sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+.shows-previous-top-wave svg {
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+.reach-out-btn:hover{
+  background-color: #fa9874!important;
+}
+a.cyber-youtube-btn {
+    font-family: "Bebas Neue", Sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -0.3px;
+    /* fill: #C62727; */
+    color: #C62727 !important;
+    background-color: #FFFFFF;
+    border-radius: 45px 45px 45px 45px;
+    border: 0;
+    padding: 15px 50px;
+    cursor: pointer;
+}
+a.cyber-youtube-btn:hover {
+    background-color: #fa9874!important;
+    color: #fff !important;
+}
+.guest-show-container {
+    padding-left: 0;
+    padding-right: 0;
+}

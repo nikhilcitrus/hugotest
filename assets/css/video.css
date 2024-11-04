@@ -1,0 +1,108 @@
+.cyber-tv-section {
+    background-color: #000;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+.cyber-tv-tabs-row .isotope-nav{
+	float: none !important;
+	margin: 0 !important;
+}
+.cyber-tv-tabs-row .isotope-nav ul li a{
+	color: #fff;
+}
+.cyber-tv-tabs-row {
+    margin-bottom: 35px;
+}
+.cyber-tv-tabs-nav{
+	display: flex;
+    justify-content: center;
+}
+.cyber-tv-tabs-row .isotope-nav ul a.active, .isotope-nav ul a:hover {
+    background: #ff6363;
+}
+.cyber-tv-tabs-row .isotope-nav ul li a {
+    border: 1px solid #ff6363;
+}
+.cyber-tv-tabs-row .isotope-nav ul a.active:after, .cyber-tv-tabs-row .isotope-nav ul a:hover:after {
+    border-color: #ff6363 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+}
+.cyber-tv-head-col h2 {
+    color: #FF5858;
+    font-size: 43px;
+    font-family: "Bebas Neue", Sans-serif;
+    font-weight: 600;
+}
+ .cyber-tv-head-col h2 .title-desc{
+    color: #fff;
+    font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+.cyber-tv-head-col {
+    text-align: center;
+}
+.cyber-tv-head-col h2 {
+    border-left: 0;
+    padding-left: 0;
+}
+.cyber-tv-videos-row figure.effect-oscar {
+    position: relative;
+}
+.cyber-tv-videos-row figure.effect-oscar .fa-play {
+    color: #fff;
+    background-color: #ff6363;
+    padding: 7px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+a.cyber-video-inner-a {
+    position: absolute !important;
+    z-index: 999 !important;
+    color: #fff !important;
+    background-color: #ff6363;
+    border-radius: 10px;
+    left: 110px;
+    top: 36px;
+    display: block !important;
+    opacity: 9 !important;
+    transform: none !important;
+}
+a.icon-pentagon{
+    display: none !important;
+}
+h3.cyber-tv-video-h3 {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    font-family: "Poppins", Sans-serif;
+    line-height: 13px;
+    text-transform: capitalize;
+    padding-top: 6px;
+}
+figure.effect-oscar figcaption::before{
+    top: 10px !important;
+    right:  10px !important;
+    bottom:  10px !important;
+    left:  10px !important;
+}
+.vidoe-inner-page-section {
+    background-color: #000;
+    padding-top: 150px;
+}
+h1.video-single-page-h1 {
+    color: #fff;
+    font-family: poppins,Sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.video-single-page-col2 {
+    text-align: center;
+}
+.cyber-single-page-video{
+    height: 350px;
+    width: 600px;
+}

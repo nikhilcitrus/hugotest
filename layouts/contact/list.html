@@ -1,0 +1,55 @@
+{{ define "main" }}
+<section class="contact-us-header">
+  <div class="container contact-us-header-container">
+    <div class="row  contact-us-header-row">
+      <div class="col-md-12 text-center contact-us-header-col">
+        <h1 class="contact-us-header-h1">{{ .Params.heading  | markdownify  }}</h1>
+        <p class="contact-us-header-p">{{ .Params.description  | markdownify  }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-us-section" id="main-container">
+  <div class="container contact-us-section-container">
+    <div class="row contact-us-section-row-main">
+      <div class="col-md-7 contact-us-section-main-col1">
+        <form class="cyber-contact-form" id="contact-form" action="{{ .Site.Params.contact_form_action }}" method="post" role="form">
+          <div class="row contact-form-row">
+            <div class="col-md-4 contact-form-inner-col">
+              <div class="form-group">
+                <label>{{i18n `name`}}</label>
+                <input class="form-control" name="name" id="name" placeholder="" type="text" required>
+              </div>
+            </div>
+            <div class="col-md-4 contact-form-inner-col">
+              <div class="form-group">
+                <label>{{i18n `email`}}</label>
+                <input class="form-control" name="email" id="email" placeholder="" type="email" required>
+              </div>
+            </div>
+            <div class="col-md-4 contact-form-inner-col">
+              <div class="form-group">
+                <label>{{i18n `subject`}}</label>
+                <input class="form-control" name="subject" id="subject" placeholder="" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>{{i18n `message`}}</label>
+            <textarea class="form-control" name="message" id="message" placeholder="" rows="10" required></textarea>
+          </div>
+          <div class="text-right contact-form-button"><br>
+            <button class="btn btn-primary solid blank" type="submit">{{i18n `send_message`}}</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-5 contact-us-section-main-col2">
+        <img src="{{ .Params.banner_src | absURL }}" alt="{{ .Params.banner_alt | markdownify }}" />
+      </div>
+    </div>
+  </div>
+  <!--/ container end -->
+</section>
+
+{{ end }}

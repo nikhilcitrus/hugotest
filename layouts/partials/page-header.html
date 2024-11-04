@@ -1,0 +1,57 @@
+{{ if (eq .Params.page_slug "comics") }}
+<div id="cyber-inner-pages-banner" class="cyber-comics-page-banner">
+  <!-- <div class="row cyber-breadcrumbs-row">
+    <div class="col-md-12 cyber-breadcrumbs-col">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item"><a href="{{ .Site.BaseURL | relLangURL }}">{{ .Site.Params.home }}</a></li>
+          <li class="breadcrumb-item text-white" aria-current="page">{{ .Title }}</li>
+        </ol>
+      </nav>
+    </div>
+  </div> -->
+  <!-- Subpage title start -->
+  <div class="cyber-inner-pages-banner-title-content">
+      <div class="row cyber-inner-pages-row">
+        <div class="col-md-7 cyber-inner-page-col1">
+          <h1>{{ .Params.heading  | markdownify  }}</h1>
+          <h2>{{ .Params.subtitle  | markdownify  }}</h2>
+          <p>{{ .Description  | markdownify  }}</p>
+        </div>
+        <div class="col-md-5 cyber-inner-page-col2">
+          <img src="{{ .Params.banner_src | absURL }}" alt="{{ .Params.banner_alt | markdownify }}" />
+        </div>
+      </div>
+  </div>
+</div>
+{{ end }}
+
+{{ if (eq .Params.page_slug "show") }}
+<div id="cyber-inner-pages-banner" class="cyber-show-page-banner">
+  <!-- <div class="row cyber-breadcrumbs-row">
+    <div class="col-md-12 cyber-breadcrumbs-col">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item"><a href="{{ .Site.BaseURL | relLangURL }}">{{ .Site.Params.home }}</a></li>
+          <li class="breadcrumb-item text-white" aria-current="page">{{ .Title }}</li>
+        </ol>
+      </nav>
+    </div>
+  </div> -->
+  <!-- Subpage title start -->
+  <div class="cyber-inner-pages-banner-title-content cyber-show-banner-title-content">
+      <div class="row cyber-inner-pages-row cyber-show-banner-row">
+        <div class="col-md-6 cyber-inner-page-col1 cyber-show-banner-col1">
+          <h1 class="show-banner-h1">{{ .Params.heading  | markdownify  }}</h1>
+          <h2 class="show-banner-h2">{{ .Params.subtitle  | markdownify  }}</h2>
+          <p class="show-banner-p">{{ .Description  | markdownify  }}</p>
+          <p class="show-banner-p">{{ .Params.sub_description  | markdownify  }}</p>
+          <a href="/video" class="btn btn-info cyber-youtube-btn"><i class="fa fas fa-tv"></i>&nbsp;&nbsp;Cyber Hero TV</a>
+        </div>
+        <div class="col-md-6 cyber-inner-page-col2 cyber-show-banner-col2">
+          <img src="{{ .Params.banner_src | absURL }}" alt="{{ .Params.banner_alt | markdownify }}" />
+        </div>
+      </div>
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,63 @@
+title : "Previous Live Shows"
+subtitle : "Discover and learn more about out Cyber Heroes! Get your own CYBER HERO CARTOON!"
+caption : "Discover"
+previous_show_item:
+  # previous_shows item loop
+  - name : "Roy Bloomberg"
+    image : "images/previous-shows/rapid-responder.webp"
+    embed : "https://www.youtube.com/embed/CWv-Raf-SwQ"
+
+  # previous_shows item loop
+  - name : "Roy Bloomberg"
+    image : "images/previous-shows/black-hat.webp"
+    embed : "https://www.youtube.com/embed/oYP4_3olFiE"
+
+  # previous_shows item loop
+  - name : "Roy Bloomberg"
+    image : "images/previous-shows/china-cyber.webp"
+    embed : "https://www.youtube.com/embed/Iqf3Q15HDZY"
+
+  # previous_shows item loop
+  - name : "Roy Bloomberg"
+    image : "images/previous-shows/five-eyes-china.jfif"
+    embed : "https://www.youtube.com/embed/MHthwDgsBVI"
+
+  # previous_shows item loop
+  - name : "Roy Bloomberg"
+    image : "images/previous-shows/gary-origin.webp"
+    embed : "https://www.youtube.com/embed/EtIrUPq6Ib0"
+
+  # previous_shows item loop
+  - name : "Roy Bloomberg"
+    image : "images/previous-shows/cyber-hero-adventures.webp"
+    embed : "https://www.youtube.com/embed/CcXR5cfKn-8"
+
+  # previous_shows item loop
+  - name : "Roy Bloomberg"
+    image : "images/previous-shows/the-cyber-hero-adventures-show.jpg"
+    embed : "https://www.youtube.com/embed/bipuBuE_kPQ"
+
+  # previous_shows item loop
+  - name : "Roy Bloomberg"
+    image : "images/previous-shows/book-club.webp"
+    embed : "https://www.youtube.com/embed/1nsQXOVrWlo"
+
+  # previous_shows item loop
+  - name : "Roy Bloomberg"
+    image : "images/previous-shows/recap-show.jpg"
+    embed : "https://www.youtube.com/embed/UX2eK7WQzLM"
+
+  # previous_shows item loop
+  - name : "BREAKING NEWS: FBI ROCKS! Colonial Pipeline Ransomware Cryptocurrency Recovered!"
+    image : "images/previous-shows/fbi-rocks.jpg"
+    embed : "https://www.youtube.com/embed/IFXhV8wO-_s"
+
+  # previous_shows item loop
+  - name : "Anatomy of an SMB Cybersecurity Acquisition"
+    image : "images/previous-shows/anatomy-smb.webp"
+    embed : "https://www.youtube.com/embed/2XBIeYZmWww"
+
+  # previous_shows item loop
+  - name : "Rapid Responder's Episode: Veterans & Cybersecurity-Unpacked"
+    image : "images/previous-shows/veterens-cybersecurity.jfif"
+    embed : "hhttps://www.youtube.com/embed/4-YOjIJlzug" 

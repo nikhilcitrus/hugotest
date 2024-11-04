@@ -1,0 +1,9 @@
+<div class="author-comics-items">
+  {{ range first 10 ( where .Site.RegularPages "Section" "comics" )}}
+  <div class="row comics-widget-row">
+    <div class="col comics-widget-col">
+      <a class="comics-widget-a" href="{{ .RelPermalink }}"><img class="comics-widget-img" alt="{{ .Title }}" src="{{ .Params.image | absURL }}"></a>
+    </div>
+  </div>
+  {{ end }}
+</div>

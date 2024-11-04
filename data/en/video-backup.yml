@@ -1,0 +1,42 @@
+############################### videos #############################
+videos:
+  title : "Service We Provide"
+  subtitle : "A Quality Experience Team with 4 years experience"
+  video_item:
+    # video item loop
+    - name : "eCommerce Websites"
+      icon : "fa-shopping-cart" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      content : "High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua polaroid befor"
+      clearUrl : "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+
+    # video item loop
+    - name : "Design for Startups"
+      icon : "fa-lightbulb-o" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      content : "High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua polaroid befor"
+      clearUrl : "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+
+    # video item loop
+    - name : "Web Design"
+      icon : "fa-tachometer" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      content : "High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua polaroid befor"
+      clearUrl : "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+
+    # video item loop
+    - name : "Apps Development"
+      icon : "fa-android" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      content : "High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua polaroid befor"
+      clearUrl : "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(60).jpg"
+
+    # video item loop
+    - name : "eCommerce Websites"
+      icon : "fa-shopping-cart" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      content : "High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua polaroid befor"
+      clearUrl : "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(47).jpg"
+
+    # video item loop
+    - name : "Design for Startups"
+      icon : "fa-lightbulb-o" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      content : "High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua polaroid befor"
+      clearUrl : "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(48).jpg"
+
+

@@ -1,0 +1,45 @@
+title : "Our Cyber Heroes"
+subtitle : "Discover and learn more about out Cyber Heroes! Get your own CYBER HERO CARTOON!"
+caption : "Discover"
+hero_member:
+  # hero member loop
+  - name : "Larry Jones"
+    rear_name : "Larry Jones as the CyberHero"
+    image : "images/heroes/larry.png"
+    class : "larry-jones"
+    description : "Larry is a regular guy. The Cyber Hero Adventures: Defenders of the Digital Universe is a ground breaking graphic novel series based on the TRUE story of Gary Berman who was the victim of a life-altering series of cyber attacks"
+  
+  # hero member loop
+  - name : "Tara Bight"
+    rear_name : "Tara Bight as the Supercoder"
+    image : "images/heroes/tara-b.png"
+    class : "tara-bright"
+    description : "Tara is a regular guy. The Cyber Hero Adventures: Defenders of the Digital Universe is a ground breaking graphic novel series based on the TRUE story of Gary Berman who was the victim of a life-altering series of cyber attacks"
+
+ # hero member loop
+  - name : "Leonidas"
+    rear_name : "Leonidas as the Cyber Soldier"
+    image : "images/heroes/leo-cybersoldier.png"
+    class : "leonidas"
+    description : "Leonidas is a regular guy. The Cyber Hero Adventures: Defenders of the Digital Universe is a ground breaking graphic novel series based on the TRUE story of Gary Berman who was the victim of a life-altering series of cyber attacks"
+
+ # hero member loop
+  - name : "Dr.G."
+    rear_name : "Dr.G. as the Cyber Ninja"
+    image : "images/heroes/dr-g-cyber-ninja.png"
+    class : "dr-g"
+    description : "Dr. Gis a regular guy. The Cyber Hero Adventures: Defenders of the Digital Universe is a ground breaking graphic novel series based on the TRUE story of Gary Berman who was the victim of a life-altering series of cyber attacks"
+
+  # hero member loop
+  - name : "Agent K"
+    rear_name : "Keith Garcia as SuperAgent K"
+    image : "images/heroes/agent-k.png"
+    class : "agent-k"
+    description : "Keith Garcia is a regular guy. The Cyber Hero Adventures: Defenders of the Digital Universe is a ground breaking graphic novel series based on the TRUE story of Gary Berman who was the victim of a life-altering series of cyber attacks"
+
+  # hero member loop
+  - name : "Queen Jio"
+    rear_name : "Queen Jio as the Royal Hacker"
+    image : "images/heroes/queen-jio.png"
+    class : "queen-jio"
+    description : "Queen Jio is a regular guy. The Cyber Hero Adventures: Defenders of the Digital Universe is a ground breaking graphic novel series based on the TRUE story of Gary Berman who was the victim of a life-altering series of cyber attacks"

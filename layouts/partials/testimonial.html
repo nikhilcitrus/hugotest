@@ -1,0 +1,14 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.homepage.testimonial }}
+{{ range .testimonial_item }}
+<div class="card">
+  <div class="media media-2x1 gd-primary"> 
+    <img class="profile-image" src="{{ .image | absURL }}" alt="testimonial">   
+  </div>
+  <div class="card-body">
+       <p class="testimonial-text">{{ .content | markdownify }}</p>
+      <h3 class="name"> {{ .name | markdownify }}<span>{{.designation | markdownify}}</span></h3>
+  </div>
+</div>
+{{ end }}
+{{ end }}

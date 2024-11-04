@@ -1,0 +1,35 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if (eq .RelPermalink "/comics/") }}
+{{ $comicsCount :=  $data.comics.villain.count  }}
+{{ $.Scratch.Set "count" $comicsCount }}
+{{ else }}
+{{ $homeCount :=  $data.homepage.villain.count  }}
+{{ $.Scratch.Set "count" $homeCount }}
+{{ end }}
+{{ $count := $.Scratch.Get "count" }}
+
+{{ with $data.villain }}
+    <div class="row">
+    {{ range $index,$elements:= .villain_member }}
+        {{ if lt $index $count}}
+        <div class="col-md-4 col-sm-6">
+            <div class="maincard p-3 {{ .class | markdownify }}">
+                <div class="thecard">
+                    <div class="thefront text-center py-4"> <img src="{{ .image | absURL }}" alt="{{ .name | markdownify }}" class="cyber-hero-villain-img" width="100">
+                        <h3 class="mt-2 mb-0">{{ .name | markdownify }}</h3>
+                    </div>
+                    <div class="theback py-3 px-3">
+                        <div class="hv-rear-view">
+                            <h4>{{ .rear_name | markdownify }}</h4>
+                            <p class="about text-justify">{{ .description | markdownify }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>     
+        {{ end }}
+    {{ end }} 
+    </div>
+{{ end }}
+

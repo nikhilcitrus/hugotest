@@ -1,0 +1,326 @@
+#cyber-inner-pages-banner, .comics-single-page-section {
+    padding-top: 150px;
+    background-color: #000;
+}
+.cyber-inner-pages-banner-title-content {
+    width: 90%;
+    margin: auto;
+}
+.cyber-inner-page-col2 {
+    text-align: center;
+}
+.cyber-inner-pages-banner-title-content h1 {
+    color: #FF6363;
+    font-family: "Oswald", Sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: -1.4px;
+    margin-bottom: 25px;
+}
+.cyber-inner-pages-banner-title-content h2 {
+    color: #FFFFFF;
+    font-family: "Oswald", Sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+}
+.cyber-inner-pages-banner-title-content p {
+    color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 75px;
+}
+h2.our-collection-h1 {
+    color: #000000;
+    font-family: "Poppins", Sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+}
+h2.our-collection-h1 {
+    color: #000000;
+    font-family: "Poppins", Sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+    position: relative;
+    background: #fff;
+    z-index: 9;
+    width: auto;
+    display: inline;
+    padding-right: 25px;
+}
+hr.our-collection-hr {
+    border-top-color: #ff5e5e;
+    border-top-width: 2px;
+    position: relative;
+    top: -41px;
+}
+section#our-collection-section {
+    padding: 40px 0;
+}
+.follow-money {
+    background-color: #350101;
+    border-radius: 25px;
+    padding: 50px;
+    border-radius: 25px;
+}
+.follow-money .btn{
+	background-color: transparent !important;
+	border: 1px solid #9a2d37 !important;
+	color: #9a2d37 !important;
+	font-size: 12px;
+	font-weight: 500;
+	margin-top: 15px;
+}
+.cybersec-summit {
+    background-color: #111133;
+    padding: 50px;
+    border-radius: 25px;
+}
+.cybersec-summit .btn{
+	background-color: transparent !important;
+	border: 1px solid #276fb0 !important;
+	color: #276fb0 !important;
+	font-size: 12px;
+	font-weight: 500;
+	margin-top: 15px;
+}
+.ai-sameh{
+	background-color: #1b1b1b;
+    padding: 50px;
+    border-radius: 25px;
+}
+.ai-sameh .btn{
+	background-color: transparent !important;
+	border: 1px solid #3e8052 !important;
+	color: #3e8052 !important;
+	font-size: 12px;
+	font-weight: 500;
+	margin-top: 15px;
+}
+.defend-health{
+	background-color: #301500;
+    padding: 50px;
+    border-radius: 25px;
+}
+.defend-health .btn{
+	background-color: transparent !important;
+	border: 1px solid #a44430 !important;
+	color: #a44430 !important;
+	font-size: 12px;
+	font-weight: 500;
+	margin-top: 15px;
+}
+
+img.our-collection-image {
+    width: 75%;
+}
+.our-collection-row h3.name {
+    color: #FFFFFF;
+    font-family: "Oswald", Sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 26px;
+}
+.our-collection-row .slick-slide span {
+    color: #fff;
+    font-family: "Poppins", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 13px !important;
+}
+.our-collection-row .slick-list {
+    padding-top: 0;
+}
+.our-collection-items {
+    margin-top: 0;
+}
+.our-collection-container {
+    margin-bottom: 50px;
+}
+.cyber-comics-hero-villain {
+    padding-top: 50px !important;
+    padding-bottom: 35px !important;
+}
+.slick-prev:before, .slick-next:before{
+	color: #ff6363 !important;
+}
+.our-collection-items ul.slick-dots{
+	display: none !important;
+}
+.cyber-comics-hero-villain {
+    margin-top: 0 !important;
+}
+.comics-heroes-wave {
+    margin-top: -50px;
+    padding: 0;
+    transform: rotateX(-180deg);
+    background-color: #fff;
+}
+h3.comics-cyber-h3-hv.hv-title {
+    color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+    text-align: left;
+    background: #000;
+    z-index: 99999 !important;
+    position: relative;
+    float: left;
+    padding-right: 125px;
+}
+hr.our-heroes-hr, hr.our-villains-hr {
+    border-top-color: #ff5e5e;
+    border-top-width: 2px;
+    position: relative;
+    top: 0px;
+}
+.comics-heroes-wave svg {
+    width: calc(100% + 1.3px);
+    height: 60px;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+.comics-single-page-container h2.cyber-post-title.post-title {
+    color: #fff;
+    font-family: poppins,Sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.cyber-post-image-col1 img {
+    width: 90%;
+}
+a.cyber-author-a-link {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Poppins", Sans-serif;
+    color: #fff;
+}
+span.comics-single-date {
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Poppins", Sans-serif;
+    margin-top: -7px;
+    display: block;
+}
+.cyber-post-widget.widget.widget-tags {
+    margin-top: 20px;
+}
+.cyber-post-image-col2 .entry-content {
+    padding-top: 0;
+}
+.cyber-post-image-col2 .entry-content p {
+    color: #fff;
+    font-family: poppins,Sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.comics-read-btn {
+    background-color: #ff6363;
+    color: #fff;
+    border-radius: 3px 3px 3px 3px;
+    border: none;
+    border-width: 1px;
+    padding: 8px 12px!important;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+.comics-read-btn:hover{
+    background-color: #e4ae53 !important;
+    color: #fff !important;
+}
+ul.cyber-comics-nav .nav-link {
+    color: #ff6363;
+}
+ul.cyber-comics-nav .nav-link:focus, ul.cyber-comics-nav .nav-link:hover {
+    border: 0 !important;
+    background: #ff6363;
+    color: #fff !important;
+}
+ul.cyber-comics-nav .nav-item.show .nav-link, ul.cyber-comics-nav .nav-link.active {
+    color: #fff !important;
+    background-color: #ff6363;
+    border: 0 !important;
+}
+div#cyb-tab-more-comics h3 {
+    color: #fff;
+    font-family: poppins,Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+div#cyb-tab-more-comics img.comics-widget-img {
+    width: 100%;
+    border: 1px solid #fff;
+    padding: 10px;
+    min-height: 320px;
+}
+.comics-single-page-section {
+    padding-bottom: 25px;
+}
+.comics-single-user-info, a.cyber-author-link {
+    float: left;
+}
+.comics-single-user-info {
+    padding-top: 10px;
+}
+a.cyber-author-link img {
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 70px;
+}
+ul.cyber-comics-nav .nav-item {
+    margin-bottom: -2px !important;
+}
+ul.cyber-comics-nav .nav-link em {
+    margin-right: 5px;
+}
+.cyber-post-image-col2 .entry-content p a {
+    color: #ff6363;
+}
+.cyber-tags-li a{
+pointer-events: none; 
+}
+div#share-buttons div {
+    border: 1px solid #d5d5d5;
+    margin-right: 10px;
+}
+.mail svg {
+    margin-top: 3px !important;
+}
+.our-collection-row .slick-slide .row {
+    min-height: 295px;
+}

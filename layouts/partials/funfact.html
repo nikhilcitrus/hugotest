@@ -1,0 +1,23 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.homepage.funfact }}
+<section class="ts_counter p-0 our-growing-network-section">
+  <div class="container our-growing-network-container">
+      <div class="row facts-wrapper wow fadeInLeft">
+        <div class="col-md-12">
+          <h2 class="cyberhero-home-counter">{{ .caption | markdownify }}</h2>
+        </div>
+      </div>
+      <div class="row facts-wrapper wow fadeInLeft text-center">
+        {{ range .funfact_item }}
+        <div class="facts one col">
+          <div class="facts-num">
+            <span class="counter">{{ .count }}</span>
+          </div>
+          <h3>{{ .name | markdownify }}</h3>
+        </div>
+        {{ end }}
+      </div>
+  </div>
+  <!--/ Container end -->
+</section>
+{{ end }}

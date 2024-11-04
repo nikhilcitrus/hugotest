@@ -1,0 +1,378 @@
+############################ Slider ##########################
+slider:
+  enable : true
+  slider_item:
+    ################# Slider item loop
+    - title : "CYBER HERO"
+      subtitle : "NETWORK"
+      bg_image : "images/slider/bg1.jpg"
+      image : ""
+      image_position : "false"
+      # slider navigator
+      # navigator:
+      #   label : "Invent"
+      #   icon : "fa-bicycle" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+
+      # slider buttons
+      buttons:
+        # button loop
+        # - label : "Start Now"
+        #   style : "white"
+        #   link : "#"
+          
+        # button loop
+        - label : "Learn More"
+          style : "solid"
+          link : "/show"
+
+    ############### Slider item loop
+    # - title : "How Big Can You Dream?"
+    #   subtitle : "We Making Difference To Great Things Possible"
+    #   bg_image : "images/slider/bg2.jpg"
+    #   image : "images/slider/bg-thumb1.png"
+    #   image_position : "left"
+    #   # slider navigator
+    #   navigator:
+    #     label : "Dream"
+    #     icon : "fa-hotel" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+
+    #   # slider buttons
+    #   buttons:
+    #     # button loop
+    #     - label : "Take a Tour"
+    #       style : "solid"
+    #       link : "#"
+
+    ############### Slider item loop
+    # - title : "Your Challenge is Our Progress"
+    #   subtitle : "We Making Difference To Great Things Possible"
+    #   bg_image : "images/slider/bg2.jpg"
+    #   image : "images/slider/bg-thumb2.png"
+    #   image_position : "right"
+    #   # slider navigator
+    #   navigator:
+    #     label : "Tech"
+    #     icon : "fa-android" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+
+    #   # slider buttons
+    #   buttons:
+    #     # button loop
+    #     - label : "Start Now"
+    #       style : "white"
+    #       link : "#"
+          
+    #     # button loop
+    #     - label : "Learn More"
+    #       style : "solid"
+    #       link : "#"
+
+
+############################### Service ####################################
+service:
+  enable : false
+  # service content comes from "data/*/service.yml" file
+
+############################### Video ####################################
+video:
+  enable : true
+  # video content comes from "data/*/videos.yml" file
+
+  
+############################### portfolio ##################################
+portfolio:
+  enable : false
+  title : "Our Awesome Work"
+  subtitle : "Watch our Cyber Hero Network Shows"
+  title_icon : "fa-suitcase"
+  # portfolio items comes from "content/*/portfolio" folder
+
+############################### video ##################################
+video:
+  enable : false
+  title : "Cyber Hero TV"
+  subtitle : "We Making Difference To Great Things Possible"
+  # portfolio items comes from "content/*/portfolio" folder
+
+  
+############################### funfact ##################################
+funfact:
+  enable : true
+  caption: "Our Growing Network"
+  funfact_item:
+    # funfact item loop
+    - name : "Members"
+      icon : "fa-user" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      count : "22700"
+      
+    # funfact item loop
+    - name : "CEO'S"
+      icon : "fa-institution" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      count : "1670"
+      
+    # funfact item loop
+    - name : "CTO's"
+      icon : "fa-suitcase" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      count : "3572"
+      
+    # funfact item loop
+    - name : "CIO's"
+      icon : "fa-trophy" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      count : "518"
+
+     # funfact item loop
+    - name : "CISO'S"
+      icon : "fa-trophy" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      count : "518"
+  
+############################### feature ##################################
+feature:
+  enable : false
+  feature_item:
+    # feature item loop
+    - name : "Clean &amp; Modern Design"
+      icon : "fa-heart-o" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      content : "Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat"
+      
+    # feature item loop
+    - name : "Useful Shortcodes"
+      icon : "fa-codepen" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      content : "Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat"
+      
+    # feature item loop
+    - name : "Parallax Section"
+      icon : "fa-film" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      content : "Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat"
+      
+    # feature item loop
+    - name : "Multipurpose Concept"
+      icon : "fa-newspaper-o" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      content : "Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat"
+      
+    # feature item loop
+    - name : "Responsive Layout"
+      icon : "fa-desktop" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      content : "Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat"
+      
+    # feature item loop
+    - name : "Light wight Performance"
+      icon : "fa-pagelines" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      content : "Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat"
+      
+    # feature item loop
+    - name : "Free Lifetime Updates"
+      icon : "fa-recycle" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      content : "Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat"
+      
+    # feature item loop
+    - name : "Endless Possibilites"
+      icon : "fa-diamond" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      content : "Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat"
+      
+    # feature item loop
+    - name : "24/7 Live Support"
+      icon : "fa-whatsapp" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      content : "Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat"
+
+
+  
+############################### about ##################################
+our_comics:
+  enable : true
+  title : "Our Comics"
+  subtitle : "The CyberHero Adventures Comics"
+  bg_image : "images/our-comics-youtube.png"
+  content : "Defenders of the Digital Universee"
+  paper_icon : "images/paper-font-awesome.png"
+  src : "https://www.youtube.com/embed/wgo27H9PpRc"
+  default_src: "images/we_need_you.png"
+  button:
+    # button
+    - label : "Explore All"
+      icon : "fas fa-book-reader" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      paper_icon : "images/paper-font-awesome.png"
+  our_comics_item:
+    # about item loop
+    - name : "Comics and Cyber?"
+      icon : "fa-bicycle" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      content : "Yes! We enable you to amplify your internal and external messages via The Cyber Hero Adventures comics and characters, and ignite passion, engagement, and fun to DEFEAT “death by PowerPoint”."
+      
+    # about item loop
+    - name : "Get your own Edition!"
+      icon : "fa-diamond" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      content : "We LOVE to co-create our comics to help Sponsors amplify their missions! Check the cool special edition that we did for Hack-in-the-Box in the United Arab Emirates"
+
+############################### hero ####################################
+hero:
+  enable : true
+  title : "Our Cyber Heroes"
+  subtitle : "Discover and learn more about out Cyber Heroes! Get your own CYBER HERO CARTOON!"
+  caption : "Discover"
+  button_label : "Explore All"
+  button_icon : "fas fa-play"
+  count : 3
+
+  # hero content comes from "data/*/hero.yml" file
+
+############################### villain ####################################
+villain:
+  enable : true
+  title : "Our Cyber Villains"
+  subtitle : "Discover and learn more about out Cyber Heroes! Get your own CYBER HERO CARTOON!"
+  caption : "Discover"
+  button_label : "Explore All"
+  button_icon : "fas fa-play"
+  count : 3
+
+  # hero content comes from "data/*/villain.yml" file
+
+############################### team ####################################
+team:
+  enable : false
+  # team content comes from "data/*/team.yml" file
+
+############################ Call to action #############################
+call_to_action:
+  enable : false
+  title : "Are You Ready to Buy This Template!"
+  subtitle : "Just Click Button and Use Your Own"
+  bg_image : "images/parallax/parallax1.jpg"
+  buttons:
+    # button loop
+    - label : "Purchase Now"
+      style : "white"
+      link : "#"
+      
+    # button loop
+    - label : "Get In Touch"
+      style : "solid"
+      link : "#"
+
+
+############################### pricing ####################################
+pricing:
+  enable : false
+  # pricing content comes from "data/*/pricing.yml" file
+
+
+############################### All Comics ####################################
+recent_show:
+  enable : true
+  title : "Recent Shows"
+  bg_image : "images/team/our-comics-youtube.png"
+  default_src : "https://www.youtube.com/embed/MHthwDgsBVI"
+  default_img: "images/gary-home-vid.png"
+############################### All Comics End ####################################
+
+
+############################### Upcoming Shows ####################################
+upcoming_show:
+  enable : true
+  title : "Upcoming Live Shows"
+  bg_image : "images/team/our-comics-youtube.png"
+  default_src : "https://www.youtube.com/embed/IFXhV8wO-_s"
+  default_img: "images/fbi-rockz.png"
+############################### Upcoming Shows End ####################################
+
+############################### Previous Shows ####################################
+previous_show:
+  enable : true
+  title : "Previous Live Shows"
+  bg_image : "images/team/our-comics-youtube.png"
+  default_src : "https://www.youtube.com/embed/CWv-Raf-SwQ"
+  default_img: "images/rapid-responder.png"
+############################### Previous Shows End ####################################
+
+############################### testimonial ####################################
+testimonial:
+  enable : true
+  bg_image : "images/parallax/parallax2.jpg"
+  testimonial_item:
+    # testimonial item loop
+    - name : "Roy Bloomberg"
+      image : "images/team/roy-bloomberg.webp"
+      designation : "Cyberlitica-Board Advisors"
+      content : "if you're interested in cybersecurity you must watch Gary's show! He's smart, entertaining. Highly Recommended!"
+      
+    # testimonial item loop
+    - name : "Tyler Cohen Wood"
+      image : "images/team/tyler-cohen.webp"
+      designation : "CEO, MyConnectedHealth"
+      content : "Gary has a unique take on making cybersecurity fun and exciting. He is a true thought leader and visionary!"
+      
+    # testimonial item loop
+    - name : "Tomeka Napper"
+      image : "images/team/tomeka-napper.webp"
+      designation : "CEO, Vijien Enterprises"
+      content : "Gary is COMMITED to Diversity & Inclusion! Thanks for inviting me to you show. It was awesome!"
+      
+    # testimonial item loop
+    - name : "Tina Gravel"
+      image : "images/team/tina-gravel.webp"
+      designation : "SVP Channels & Alliances AppGate"
+      content : "Gary Berman is a marketing genius. With humor and aplomb he takes complex subjects and makes them accessible to everyone."
+      
+    # testimonial item loop
+    - name : "Dele Atanda"
+      image : "images/team/dele-atanda.webp"
+      designation : "CEO, metaMe"
+      content : "I've really enjoyed being a part of The Cyber Hero Adventures Show! It was incredible! Thank you for the invitation."
+
+    # testimonial item loop
+    - name : "Terry McGraw"
+      image : "images/team/terry-mcgraw.webp"
+      designation : "Head of Customer Success, Polarity.io"
+      content : "Gary's passion and engaging personality makes the CyberHero Show a fun and informative venue for stategic thought leaders."
+
+    # testimonial item loop
+    - name : "Paul Kirsh"
+      image : "images/team/paul.webp"
+      designation : "CEO, 4th Bin"
+      content : "Had the opportunity to spend time with Gary on his show! His passion for cybersecurity is extremely refreshing!"
+      
+    # testimonial item loop
+    - name : "Scott Schober"
+      image : "images/team/scott-schober.webp"
+      designation : "CEO, Berkeley Varitrnics Systems"
+      content : "He brings together the top cybersecurity thought leaders on his network and draws out important cybersecurity issues."
+
+    # testimonial item loop
+    - name : "Marc Raphael"
+      image : "images/team/marc-raphael.webp"
+      designation : "CEO, Supermely Tech"
+      content : "With his show, Gary is a breath of fresh of air in cybersecurity. He brings fun to a complex industry!"
+    
+      
+############################ Partners logo slider ##########################
+partner_logo_slider:
+  enable : true
+  caption: "Our Partners"
+  slider_item:
+    # slider item loop
+    - name : "partner"
+      logo : "images/partners/aon.png"
+      link : "#"
+      
+    # slider item loop
+    - name : "partner"
+      logo : "images/partners/crest.png"
+      link : "#"
+      
+    # slider item loop
+    - name : "partner"
+      logo : "images/partners/cybermaterial.png"
+      link : "#"
+      
+    # slider item loop
+    - name : "partner"
+      logo : "images/partners/proactive.png"
+      link : "#"
+      
+    # slider item loop
+    - name : "partner"
+      logo : "images/partners/rane.png"
+      link : "#"
+      
+    # slider item loop
+    - name : "partner"
+      logo : "images/partners/sp-partner.png"
+      link : "#"

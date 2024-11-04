@@ -1,0 +1,112 @@
+{{ define "main" }}
+<section id="main-container" class="comics-single-page-section">
+   <div class="container comics-single-page-container">
+      <div class="row comics-single-page-row">
+         <!-- post image start -->
+         <div class="col-md-4 cyber-post-image-col1">
+            <div class="cyber-post-image-wrapper post-image-wrapper">
+               <img class="cyber-post-img" src="{{ .Params.image | absURL }}" class="img-fluid" alt="{{ .Title }}" />
+            </div>
+            <!-- post image end -->
+         </div>
+         <div class="col-md-8 cyber-post-image-col2">
+            <div class="cyber-post-header post-header clearfix">
+               <h2 class="cyber-post-title post-title">{{ .Title }}</h2>
+               <div class="cyber-post-meta post-meta">
+                  <div class="comics-single-auhtor-row">
+                     <div class="comics-user-document-info">
+                        <a class="cyber-author-link" href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}">
+                        <img class="cyber-author-img" src="{{ .Params.author_image | absURL }}" alt="{{ .Params.Author | title }}">
+                        </a>
+                        <div class="comics-single-user-info">
+                           <div class="comics-row-user-info">
+                              <span class="comics-user-single-name">
+                              <a class="cyber-author-a-link" href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}">{{ .Params.Author | title }}</a>
+                              </span>
+                           </div>
+                           <div class="comics-row-date-info">
+                              <span class="comics-single-date">{{ .PublishDate.Format "02 Jan, 2006" }}</span>                                
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- post heading end -->
+            <div>
+               <!-- Blog tags start -->
+               {{- if isset .Site.Taxonomies "tags" }}
+               {{- if not (eq (len .Site.Taxonomies.tags) 0) }}
+               <div class="cyber-post-widget widget widget-tags">
+                  <ul class="cyber-list-unstyled list-unstyled clearfix">
+                     {{ range .Params.tags }}
+                     <li class="cyber-tags-li"><a>{{ . }}</a> </li>
+                     {{ end }}
+                  </ul>
+               </div>
+               {{- end }}
+               {{- end }}
+               <!-- Blog tags end -->
+            </div>
+            <div class="cyber-post-entry-content entry-content">{{ .Content }}</div>
+            <div class="comics-single-read">
+               <a href="{{ .Params.readUrl }}" target="blank" class="btn btn-info comics-read-btn">Read</a>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="cyber-comics-nav nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="more-comics-tab" data-toggle="tab" href="#cyb-tab-more-comics" role="tab" aria-controls="more-comics-tab" aria-selected="true">
+                <em class="fa fa-book"></em>Show more documents          
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="share-tab" data-toggle="tab" href="#cyb-tab-share" role="tab" aria-controls="share-tab" aria-selected="false">
+                <em class="fa fa-share"></em>Share                         
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a href="{{ .Params.pdfUrl | absURL }}" class="nav-link" id="download-tab" download>
+                <em class="fa fa-download"></em> Download
+              </a>
+            </li>
+            <!-- <li class="nav-item" role="presentation">
+              <a class="nav-link" id="info-tab" data-toggle="tab" href="#cyb-tab-info" role="tab" aria-controls="contact-tab" aria-selected="false">
+                <em class="fa fa-align-left"></em> Info
+              </a>
+            </li> -->
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="cyb-tab-more-comics" role="tabpanel" aria-labelledby="more-comics-tab"> 
+               <h3 class="widget-title">More magazines by this user</h3> 
+               {{ partial "comics-widget.html" . }}
+            </div>
+            <div class="tab-pane fade" id="cyb-tab-share" role="tabpanel" aria-labelledby="share-tab">
+              {{ partial "share-buttons.html" . }}
+            </div>
+            <div class="tab-pane fade" id="cyb-tab-download" role="tabpanel" aria-labelledby="download-tab">
+              This will download the pdf {{ .Params.pdfUrl | absURL }}
+            </div>
+            <!-- <div class="tab-pane fade" id="cyb-tab-info" role="tabpanel" aria-labelledby="info-tab">
+  
+              <ul class="yp-mag-info-collapse-text-ul list-unstyled">
+                <li>Page 2 and 3: <a href="https://www.yumpu.com/en/document/view/63162760/the-cyberhero-adventures-defending-your-health-view-in-full-screen-thanks-to-our-healthcare-workers-and-first-responders/2" title="51">51</a></li>
+                <li>Page 4 and 5: <a href="https://www.yumpu.com/en/document/view/63162760/the-cyberhero-adventures-defending-your-health-view-in-full-screen-thanks-to-our-healthcare-workers-and-first-responders/4" title="- BLUVECTOR ® A COMCAST COMPANY We">- BLUVECTOR ® A COMCAST COMPANY We</a></li>
+                <li>Page 7 and 8: <a href="https://www.yumpu.com/en/document/view/63162760/the-cyberhero-adventures-defending-your-health-view-in-full-screen-thanks-to-our-healthcare-workers-and-first-responders/7" title="Dark Web &amp; Domain Monitoring Chatro">Dark Web &amp; Domain Monitoring Chatro</a></li>
+                <li>Page 35 and 36: <a href="https://www.yumpu.com/en/document/view/63162760/the-cyberhero-adventures-defending-your-health-view-in-full-screen-thanks-to-our-healthcare-workers-and-first-responders/35" title="38">38</a></li>
+                <li>Page 37 and 38: <a href="https://www.yumpu.com/en/document/view/63162760/the-cyberhero-adventures-defending-your-health-view-in-full-screen-thanks-to-our-healthcare-workers-and-first-responders/37" title="43">43</a></li>
+                <li>Page 39 and 40: <a href="https://www.yumpu.com/en/document/view/63162760/the-cyberhero-adventures-defending-your-health-view-in-full-screen-thanks-to-our-healthcare-workers-and-first-responders/39" title="46">46</a></li>
+                <li>Page 41 and 42: <a href="https://www.yumpu.com/en/document/view/63162760/the-cyberhero-adventures-defending-your-health-view-in-full-screen-thanks-to-our-healthcare-workers-and-first-responders/41" title="40">40</a></li>
+                <li>Page 43 and 44: <a href="https://www.yumpu.com/en/document/view/63162760/the-cyberhero-adventures-defending-your-health-view-in-full-screen-thanks-to-our-healthcare-workers-and-first-responders/43" title="32">32</a></li>
+                <li>Page 45 and 46: <a href="https://www.yumpu.com/en/document/view/63162760/the-cyberhero-adventures-defending-your-health-view-in-full-screen-thanks-to-our-healthcare-workers-and-first-responders/45" title="37">37</a></li>
+                <li>Page 47: <a href="https://www.yumpu.com/en/document/view/63162760/the-cyberhero-adventures-defending-your-health-view-in-full-screen-thanks-to-our-healthcare-workers-and-first-responders/47" title="34">34</a></li>
+             </ul>
+            </div> -->
+          </div>
+        </div>
+      </div>
+   </div>
+</section>
+{{ end }}

@@ -1,0 +1,59 @@
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+<section id="portfolio" class="cyber-tv-section portfolio">
+  <div class="container cyber-tv-head-container">
+    {{ with $data.homepage.video }}
+    <div class="row cyber-tv-head-row">
+      <div class="col-md-12 heading cyber-tv-head-col">
+        <h2 class="title">{{ .title | markdownify }} <span class="title-desc">{{ .subtitle | markdownify }}</span></h2>
+      </div>
+    </div> <!-- Title row end -->
+    {{ end }}
+
+    <!--Isotope filter start -->
+    <div class="row cyber-tv-tabs-row">
+      <div class="col-12 cyber-tv-tabs-col">
+        <div class="isotope-nav cyber-tv-tabs-nav" data-isotope-nav="isotope">
+          <ul class="cyber-tv-ul">
+            <li><a href="#" class="active" data-filter="*">All</a></li>
+            {{ $categories := slice }}
+            {{ range (where .Site.RegularPages "Section" "video") }}
+            {{ range .Params.types }}
+            {{ $categories = $categories | append . }}
+            {{ end }}
+            {{ end }}
+            {{ range ( $categories | uniq ) }}
+            <li><a href="#" data-filter=".{{ . | urlize }}">{{ . | humanize }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div><!-- Isotope filter end -->
+  </div>
+
+  <div class="container cyber-tv-videos-container">
+    <div class="row isotope cyber-tv-videos-row" id="isotope">
+      {{ range (where .Site.RegularPages "Section" "video") }}
+
+      {{ $singleVideoUrl :=  .RelPermalink  }}
+      {{ $.Scratch.Set "singleVideoUrlGet" $singleVideoUrl }}
+      {{ $singleVideoUrlNew := $.Scratch.Get "singleVideoUrlGet" }}
+
+      <div class="col-sm-3 {{range .Params.types }}{{ . | urlize}} {{ end }} isotope-item cyber-tv-video-item">
+        <div class="grid cyber-tv-vide-grid">
+          <figure class="m-0 effect-oscar">
+            {{ range first 1 .Params.images }}
+            <img class="cyber-video-thumb" src="{{ . | absURL }}" alt="Video Thumbnail">
+              <a class="cyber-video-inner-a" href="{{ $singleVideoUrlNew   }}"><em class="fa fas fa-play cyber-video-play-icon"></em></a>
+            {{ end }}
+            <figcaption>
+              <a class="icon-pentagon" href="{{ .RelPermalink }}"><em class="fa fas fa-play cyber-video-play-icon-2"></em></a>
+              <h3 class="cyber-tv-video-h3">{{ .Title | markdownify }}</h3>
+            </figcaption>
+          </figure>
+        </div>
+      </div><!-- Isotope item end -->
+      {{ end }}
+    </div><!-- Content row end -->
+  </div><!-- Container end -->
+</section>

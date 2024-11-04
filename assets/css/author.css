@@ -1,0 +1,100 @@
+.cyber-author-section.bg-light {
+    background-color: #000 !important;
+    padding-top: 95px;
+    padding-bottom: 0;
+}
+.cyber-channel-img-small-container img {
+    border-radius: 0 !important;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #fff;
+	z-index: 999;
+    position: relative;
+}
+.cyber-channel-img-small-container {
+    margin-top: -100px;
+    padding: 0px 35px;
+}
+.cyber-channel-main-info-container {
+    position: relative;
+    left: 220px;
+    top: 180px;
+}
+.cyber-channel-img-large-gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(//assets.yumpu.com/v4/img/modules/search/gradient.png);
+    background-repeat: repeat-x;
+}
+.cyber-channel-main-info-container h1 {
+    color: #fff;
+    font-family: poppins,Sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: 25px;
+}
+ul.cyber-summary-ul.list-inline li {
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+}
+.cyber-channel-img-large-container {
+    height: 240px;
+}
+ul.cyber-summary-ul.list-inline li a {
+    color: #fff;
+}
+.cyber-channel-social-share, .cyber-channel-description {
+    position: relative;
+    left: 190px;
+    top: -53px;
+}
+.cyber-channel-social-share .icon-pentagon:before, .cyber-channel-social-share .icon-pentagon:after{
+	display: none;
+}
+.cyber-channel-social-share .icon-pentagon {
+    text-align: center;
+    background: #ff6363;
+    border-radius: 2px;
+    height: 35px;
+}
+.cyber-channel-social-share .icon-pentagon i {
+    line-height: 35px;
+}
+.cyber-channel-description p {
+    color: #fff;
+    font-family: poppins,Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.dropdown.cyber-select-browse-order {
+    position: relative;
+    /* right: 0 !important; */
+    width: 200px;
+    float: right;
+    top: -158px;
+}
+.cyber-select-browse-order a {
+    color: #fff !important;
+    font-size: 12px;
+}
+select.cyber-author-select.custom-select {
+    font-size: 13px;
+    border: 0;
+}
+.cyber-author-widget-section {
+    background: #000;
+    padding-top: 65px;
+    margin-top: -60px;
+    padding-bottom: 25px;
+    border-top: 1px solid #ff6363;	
+}
+.cyber-author-widget-section img {
+    width: 100%;
+    border: 1px solid #686868;
+    padding: 15px;
+    min-height: 380px;
+    margin-bottom: 25px;
+}

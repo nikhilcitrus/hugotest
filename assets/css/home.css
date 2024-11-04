@@ -1,0 +1,1244 @@
+/*Flip Card CSS */
+.thecard {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+.maincard:hover .thecard {
+    transform: rotateY(180deg);
+}
+
+.thefront, .theback {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.theback {
+    transform: rotateY(180deg);
+}
+.maincard {
+    position: relative;
+    width: 300px;
+    height: 300px
+}
+
+.thecard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease
+}
+.cyber-home-iframe-thumb {
+    cursor: pointer;
+}
+.thecard:hover {
+    transform: rotateY(180deg)
+}
+
+.thefront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hidden;
+    background: #D50000;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #eee;
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    padding: 10px
+}
+
+.theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: hidden;
+    background: #D50000;
+    color: #fff;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    border: 1px solid #eee;
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    padding: 10px
+}
+
+.user_name {
+    color: #eee;
+    font-size: 10px;
+    margin-top: 0px
+}
+
+.about {
+    font-size: 12px
+}
+/*Flip Card CSS */
+
+/* Carousel CSS */
+
+
+/* Carousel CSS */
+
+
+.header {
+    border-top: none !important;
+}
+.navbar-brand {
+    background: none !important;
+}
+.navbar-brand.navbar-bg {
+    height: 82px;
+    line-height: 40px !important;
+    width: auto;
+    z-index: 999;
+}
+.btn.btn-primary.solid {
+    background: #ff6363 !important;
+}
+.cyber-header-title{
+    color: #fff;
+}
+
+
+
+@media (max-width:991.98px) {
+    .padding {
+        padding: 1.5rem
+    }
+}
+
+@media (max-width:767.98px) {
+    .padding {
+        padding: 1rem
+    }
+}
+
+.padding {
+    padding: 5rem
+}
+
+.card {
+    position: relative;
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #d2d2dc;
+    border-radius: 11px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
+    box-shadow: 0px 0px 5px 0px rgb(161, 163, 164)
+}
+
+.card .card-body {
+    padding: 1rem 1rem
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem
+}
+
+p {
+    font-size: 0.875rem;
+    margin-bottom: .5rem;
+    line-height: 1.5rem
+}
+
+h4 {
+    line-height: .2 !important
+}
+
+.cyber-carousel-items {
+    width: 90%;
+    margin: 0px auto;
+    /* margin-top: 50px */
+}
+.cyber-carousel-items-home.cyber-carousel-items {
+    margin-top: 50px 
+}
+
+.slick-slide {
+    margin: 10px
+}
+
+.media iframe,
+.media-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 0;
+    border-radius: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: rgba(120, 120, 120, .1);
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.media-content:before {
+    content: '';
+    position: absolute;
+    height: 10%;
+    width: 90%;
+    left: 5%;
+    bottom: 0;
+    background: inherit;
+    background-position-y: 100%;
+    filter: blur(10px)
+}
+
+.circle .media-content:before {
+    width: 40%;
+    left: 30%
+}
+
+.profile-image {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 11px !important;
+    border-top-right-radius: 11px
+}
+
+.card-title {
+    font-size: 19px;
+    font-weight: 200
+}
+
+
+/*Riju 13-08-2021*/
+.cd-hero-slider h2, .cd-hero-slider p{
+    margin: 0 !important;
+    width: 100% !important;
+    text-align: left;
+}
+.cd-hero-slider h3{
+    text-align: left;
+}
+.cd-full-width {
+    text-align: left !important;
+}
+.cyber-hero-slider h2 {
+    color: #383838;
+    font-family: "Bebas Neue", Sans-serif;
+    font-size: 170px;
+    font-weight: 400;
+    letter-spacing: 4.8px;
+    margin-bottom: 65px !important;
+}
+.cyber-hero-slider h3{
+    color: #FF5353;
+    font-family: "Bebas Neue", Sans-serif;
+    font-size: 200px;
+    font-weight: 400;
+    letter-spacing: 4.8px;
+    margin-bottom: 65px !important;
+}
+.cyber-hero-slider a {
+    font-family: "Bebas Neue", Sans-serif;
+    font-size: 1.4em !important;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -0.3px;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #FF6363;
+    border-radius: 12px 12px 12px 12px !important;
+    padding: 15px 40px !important;
+    border: 0 !important;
+}
+.cyber-hero-slider a.btn.btn-primary.solid.cd-btn:hover{
+    background-color: #e4ae53 !important;
+    color: #fff !important;
+}
+.cyber-header-title {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 1.25em;
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: 70px;
+    letter-spacing: 1.3px;
+    margin-left: 15px;
+}
+ul.cyber-nav-ul {
+    margin-top: 17px;
+    margin-bottom: 16px;
+}
+.cyber-nav-container {
+    margin-right: 5%;
+}
+.cyber-navbar-collapse li a {
+    font-family: Poppins;
+    font-weight: 400 !important;
+    text-transform: capitalize !important;
+    font-size: 15px !important;
+    letter-spacing: 0px;
+}
+.cyber-header a.navbar-brand.navbar-bg {
+    margin-left: 5%;
+    margin-top: 10px;
+    padding-left: 0;
+}
+img.comics-paper-icon {
+    width: 17px;
+    position: relative;
+    top: -2px;
+}
+ul.cyber-hero-slider .cd-full-width {
+    padding-left: 6%;
+    padding-top: 125px;
+}
+.cd-hero-slider li{
+    background-color: transparent !important;
+}
+.cyber-hero-slider li.selected {
+    background-color: #000 !important;
+}
+.cyber-header a img {
+    width: 75px;
+}
+
+.cyber-testimonial-items img.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50% !important;
+    position: relative;
+    top: -50px;
+    left: 50px;
+}
+.cyber-testimonial-items .slick-list.draggable {
+    overflow: visible;
+}
+.cyber-testimonial-items .media{
+    height: 50px;
+}
+p.testimonial-text {
+    color: #111f3d;
+    font-size: 16px;
+    line-height: 22px;
+    border-bottom: 1px solid #d7dadf;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+h3.name {
+    text-transform: capitalize;
+    color: #111f3d;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+h3.name span {
+    color: #70788a;
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 10px;
+}
+footer#footer {
+    background: #000 !important;
+    margin-top: -75px;
+    padding-top: 100px;
+}
+.wave-footer {
+    padding: 0;
+}
+.wave-footer svg {
+    fill: #250101;
+    height: 50px;
+    width: 100%;
+}
+.cyber-footer-widget-left h3.widget-title {
+    font-weight: 300 !important;
+    font-family: Poppins;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 20px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+.cyber-footer-widget-right h3.widget-title{
+  margin-bottom: 20px;
+}
+.cyber-footer-widget-left ul.footer-social, .cyber-footer-widget-left a.btn {
+    display: inline-block;
+}
+.footer-social li a {
+    background-color: #2e2e2e !important;
+    border-radius: 5px;
+    padding: 15px 5px;
+    margin-right: 5px;
+}
+.footer-social li span:before, .footer-social li span:after {
+    border: 0 !important;
+}
+.footer-social li span {
+    background: none !important;
+}
+.cyber-footer-widget-left a.btn {
+    font-size: 15px;
+    background-color: #FF5F5F;
+    border-radius: 12px 12px 12px 12px;
+    padding: 15px;
+    border: 0;
+    font-family: Poppins;
+    margin-top: -6px;
+}
+.cyber-footer-widget h3 {
+    color: #fff;
+    /* font-family: Poppins; */
+    font-family: "Bebas Neue", Sans-serif;
+}
+.cyber-footer-widget li.nav-item {
+    margin-bottom: 0;
+}
+section#copyright:before {
+    display: none;
+}
+section#copyright {
+    background: #000 !important;
+}
+.copyright-info {
+    border: 0 !important;
+    text-align: left;
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 17px;
+    font-family: Poppins;
+    padding-top: 0;
+}
+.cyber-footer {
+    padding-bottom: 0;
+}
+.copyright-info a{
+    color: rgba(72,205,254,.81)!important;
+}
+a.nav-link.join-the-show-menu-a {
+    background-color: #ff6363;
+    color: #fff;
+    border-radius: 3px 3px 3px 3px;
+    border: none;
+    border-width: 1px 1px 1px 1px;
+    padding: 8px 12px 8px 12px !important;
+    margin-top: 11px;
+}
+a.nav-link.join-the-show-menu-a:hover, a.expolore-heroes-villains:hover, a.cyber-expolore-btn:hover, .cyber-footer-widget-left a.btn:hover{
+  color: #fff !important;
+  background-color: #e4ae53 !important;
+}
+.cyber-video-main-container {
+    width: 100%;
+    max-width: 854px;
+    min-width: 440px;
+    margin: 0 auto;
+}
+
+.vid-container {
+  position: relative;
+  padding-bottom: 52%;
+  padding-top: 30px; 
+  height: 0; 
+}
+
+.vid-container iframe,
+.vid-container object,
+.vid-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*  VIDEOS PLAYLIST 
+############################### */
+.vid-list-container {
+  width: 92%;
+  overflow: hidden;
+  margin-top: 0;
+  margin-left:4%;
+  padding-bottom: 20px;
+  height: 100px;
+}
+
+.vid-list {
+  width: 1344px;
+  position: relative;
+  top:0;
+  left: 0;
+}
+
+.vid-item {
+  display: block;
+  width: 148px;
+  height: 148px;
+  float: left;
+  margin: 0;
+  padding: 10px;
+}
+
+.thumb {
+  /*position: relative;*/
+  overflow:hidden;
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+.thumb img {
+  width: 100%;
+  position: relative;
+  top: -13px;
+}
+
+.vid-item .desc {
+  color: #21A1D2;
+  font-size: 15px;
+  margin-top:5px;
+}
+
+.vid-item:hover {
+  cursor: pointer;
+}
+
+.arrows {
+  position:relative;
+  width: 100%;
+}
+
+.arrow-left {
+  color: #fff;
+  position: absolute;
+  background: #777;
+  padding: 5px;
+  left: 5px;
+  top: -65px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.arrow-right {
+  color: #fff;
+  position: absolute;
+  background: #777;
+  padding: 5px;
+  right: 5px;
+  top: -65px;
+  z-index:100;
+  cursor: pointer;
+}
+
+.arrow-left:hover {
+  background: #CC181E;
+}
+
+.arrow-right:hover {
+  background: #CC181E;
+}
+
+
+@media (max-width: 624px) {
+  body {
+      margin: 15px;
+  }
+  .caption {
+      margin-top: 40px;
+  }
+  .vid-list-container {
+      padding-bottom: 20px;
+  }
+
+  /* reposition left/right arrows */
+  .arrows {
+      position:relative;
+      margin: 0 auto;
+      width:96px;
+  }
+  .arrow-left {
+      left: 0;
+      top: -17px;
+  }
+
+  .arrow-right {
+      right: 0;
+      top: -17px;
+  }
+}
+
+
+
+
+nav > .nav.nav-tabs{
+
+    border: none;
+      color:#fff;
+      background:#272e38;
+      border-radius:0;
+  
+  }
+  nav > div a.nav-item.nav-link,
+  nav > div a.nav-item.nav-link.active
+  {
+    border: none;
+      padding: 18px 25px;
+      color:#fff;
+      background:#272e38;
+      border-radius:0;
+  }
+  
+  nav > div a.nav-item.nav-link.active:after
+   {
+    content: "";
+    position: relative;
+    bottom: -49px;
+    left: -10%;
+    border: 10px solid transparent;
+    border-top-color: #e74c3c;
+  }
+  .tab-content{
+    background: #000;
+    line-height: 25px;
+    padding:30px 25px;
+  }
+  
+  nav > div a.nav-item.nav-link:hover,
+  nav > div a.nav-item.nav-link:focus
+  {
+    border: none;
+      background: #e74c3c;
+      color:#fff !important;
+      border-radius:0;
+      transition:background 0.20s linear;
+  }
+  .cyber-testimonial-items .draggable {
+    overflow-x: hidden !important;
+    padding-top: 50px;
+}
+.cyber-home-partners {
+    background-color: #FF6363;
+    padding-top: 0 !important;
+    margin-top: -2px;
+    padding-bottom: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.client_logo a {
+    border: 0 !important;
+}
+.cyber-home-partners img {
+    width: 100%;
+}
+.cyber-home-partners h2{
+    color: #FFFFFF;
+    font-family: "Bebas Neue", Sans-serif;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: -0.8px;
+}
+.cyber-partners-wave.container-fluid {
+    padding: 0;
+    transform: rotateX(-180deg);
+    background-color: #fff;
+    margin-top: -1px;
+}
+.cyber-partners-wave.container-fluid svg{
+  fill: #ff6363;
+}
+section#home-cyber-villains, .cyber-home-hero-villain {
+    background-color: #000;
+    text-align: center;
+}
+.cyber-home-hero-villain .theback{
+    box-shadow: none;
+}
+.cyber-home-hero-villain .thefront {
+    background: #151414 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+.randall-rat .thefront {
+    border: 3px solid #8ba301 !important;
+}
+.randall-rat .theback {
+    border: 3px solid #8ba301 !important;
+    background: #2b2b08 !important;
+}
+h2.hv-caption {
+    color: #FF6565;
+    font-family: "Poppins", Sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: none;
+    font-style: normal;
+    letter-spacing: 0.9px;
+    margin-bottom: 10px;
+}
+h3.hv-title {
+    color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: -0.8px;
+    margin-bottom: 15px;
+}
+p.hv-subtitle {
+    color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+    font-style: normal;
+    letter-spacing: -0.8px;
+    margin-bottom: 20px;
+}
+.wave-villains {
+    padding: 0;
+    background-color: #fff;
+    margin-top: -1px;
+}
+section#home-cyber-heroes, section#home-cyber-villains {
+    padding-bottom: 0;
+    margin-top: -1px;
+}
+
+.boris-bug .thefront {
+    border: 3px solid #f23dff !important;
+}
+.boris-bug .theback {
+    border: 3px solid #f23dff !important;
+    background: #7a257e !important;
+}
+
+.wilbur-wannacry .thefront {
+    border: 3px solid #885621 !important;
+}
+.wilbur-wannacry .theback {
+    border: 3px solid #885621 !important;
+    background: #3d3521 !important;
+}
+
+
+.larry-jones .thefront {
+    border: 3px solid #ff3d3d !important;
+}
+.larry-jones .theback {
+    border: 3px solid #ff3d3d !important;
+    background: #7e2525 !important;
+}
+
+.tara-bright .thefront {
+    border: 3px solid #8c3dff !important;
+}
+.tara-bright .theback {
+    border: 3px solid #8c3dff !important;
+    background: #57257e !important;
+}
+
+.leonidas .thefront {
+    border: 3px solid #5d6f52 !important;
+}
+.leonidas .theback {
+    border: 3px solid #5d6f52 !important;
+    background: #2b402c !important;
+}
+
+
+.dr-g .thefront {
+    border: 3px solid #3d7600 !important;
+}
+.dr-g .theback {
+    border: 3px solid #3d7600 !important;
+    background: #184400 !important;
+}
+
+.agent-k .thefront {
+    border: 3px solid #045487 !important;
+}
+.agent-k .theback {
+    border: 3px solid #045487 !important;
+    background: #012b4c !important;
+}
+
+
+.queen-jio .thefront {
+    border: 3px solid #904f01 !important;
+}
+.queen-jio .theback {
+    border: 3px solid #904f01 !important;
+    background: #3c290f !important;
+}
+
+.dr-g, .agent-k, .queen-jio  {
+    margin-top: 30px;
+}
+
+a.expolore-heroes-villains, a.cyber-expolore-btn {
+    font-family: "Poppins", Sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: -0.3px;
+    fill: #FFFFFF;
+    color: #FFFFFF !important;
+    background-color: #FF6363;
+    border-radius: 12px 12px 12px 12px;
+    padding: 15px 35px 15px 35px;
+    border: 0;
+    margin-top: 50px;
+    cursor: pointer;
+}
+/*a.expolore-heroes-villains, a.cyber-expolore-btn{
+  font-size: 24px;
+}*/
+a.expolore-heroes-villains a:hover, a.cyber-expolore-btn:hover {
+    background-color: #fa9874!important;
+}
+.thefront h3 {
+    color: #FFFFFF;
+    font-family: "Bebas Neue", Sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 30px !important;
+}
+.theback h4 {
+    color: #FFFFFF;
+    font-family: "Bebas Neue", Sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.theback p {
+    font-family: "Poppins", Sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+}
+section#home-cyber-heroes {
+    padding-bottom: 0;
+    margin-top: -130px;
+    padding-top: 150px;
+}
+.wave-heroes {
+    position: relative;
+    z-index: 9;
+    padding: 0;
+    top: -10px;
+}
+.wave-heroes svg{
+    fill: #fff;
+}
+.cyber-our-comics-row-1, .cyber-our-comics-row-2 {
+    background-color: #fff;
+}
+.cyber-our-comics-row-2 iframe {
+    border-radius: 25px !important;
+}
+.home-our-comics-content h3 {
+    color: #000000;
+    font-family: "Poppins", Sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: none;
+    font-style: normal;
+    letter-spacing: -0.8px;
+    margin-bottom: 20px;
+}
+.home-our-comics-content p {
+    color: #505050;
+    font-family: "Poppins", Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+    font-style: normal;
+    line-height: 25px;
+    letter-spacing: -0.8px;
+}
+.cyber-our-comics-row-2 .gap-30{
+  height: auto !important;
+}
+.ts_counter .facts-wrapper {
+    background: #FF6363;
+}
+.ts_counter .facts.one, .ts_counter .facts.one.col:hover {
+    background: none !important;
+}
+.wave-our-growing-network {
+    padding: 0;
+}
+.wave-our-growing-network svg {
+    fill: #ff6363;
+}
+.ts_counter .facts-wrapper:first-child {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.cyber-our-comics-row-1 {
+    padding-top: 75px;
+}
+.cyber-our-comics-row-1 h2 {
+    color: #000000;
+    font-family: "Bebas Neue", Sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+    margin-bottom: 50px;
+}
+a.btn.btn-info.cyber-expolore-btn{
+  margin-top: 15px;
+}
+.cyber-our-comics-row-1 h3 {
+    color: #000000;
+    font-family: "Bebas Neue", Sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 2.2px;
+    margin-bottom: 15px;
+}
+.cyber-our-comics-row-1 p {
+    color: #FF6363;
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: none;
+    font-style: normal;
+    letter-spacing: 0.9px;
+}
+.our-growing-network-section {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background: #fe6262;
+    margin-top: -25px;
+}
+.our-growing-network-section span.counter {
+    color: #FFFFFF;
+    font-family: "Bebas Neue", Sans-serif;
+    font-size: 50px;
+}
+h2.cyberhero-home-counter {
+    color: #FFFFFF;
+    font-family: "Bebas Neue", Sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: -0.8px;
+    padding-top: 35px;
+}
+.our-growing-network-section .facts h3 {
+    color: #FFFFFF;
+    font-family: "Bebas Neue", Sans-serif;
+    font-size: 25px;
+    margin-top: 15px;
+}
+section.cyber-home-testimonial-section {
+    background-color: #000;
+    padding-top: 1px;
+    border-top: 2px solid #ff6363;
+}
+.cyber-testimonial-items .slick-slide{
+  box-shadow: none;
+  min-height: 260px;
+}
+.vid-container{
+  width: 56%;
+  margin: auto;
+}
+.cyber-footer-widget-right p {
+    margin-bottom: 25px;
+    line-height: 17px;
+}
+.cyber-footer-widget-right h4, .cyber-footer-widget-right .mb-4 h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.cyber-footer-widget-right a {
+    color: #fff;
+}
+#copyright .col-md-12.text-center .copyright-info {
+    text-align: left !important;
+    margin: inherit;
+}
+section.cyber-home-video-section {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.cyber-home-video-container {
+    padding: 0 0 30px 0;
+    background: #000;
+}
+.cyber-home-video-iframe {
+    width: 56%;
+    margin: auto;
+    height: 300px;
+}
+.cyber-home-iframe-container {
+    text-align: center;
+}
+.cyber-home-hero-villain .maincard{
+  width: 100%;
+}
+.cyber-home-hero-villain .thefront img {
+    width: 60%;
+}
+a.nav-link.join-the-show-menu-a:hover {
+    color: #fff !important;
+}
+a.expolore-heroes-villains:hover, a.cyber-expolore-btn:hover{
+  background-color: #fa9874!important;
+}
+nav > div a.nav-item.nav-link.active:after{
+  display: none;
+}
+.cyber-home-video-col a.active {
+    background: #ff6363 !important;
+}
+.cd-hero-slider .cd-full-width, .cd-hero-slider .cd-half-width{
+  position: inherit !important;
+}
+.cd-hero-slider h3, .cd-hero-slider p{
+  display: block !important;
+}
+.footer-social .fa-linkedin-square {
+    color: #539cff;
+    font-size: 20px !important;
+}
+.footer-social .fa-youtube-play {
+    color: #ff1818;
+    font-size: 20px !important;
+}
+.footer-social .fa-twitter {
+    color: #2f9df4;
+    font-size: 20px !important;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+  .cyber-hero-slider h2, .cyber-hero-slider h3{
+    font-size: 50px !important;
+    margin-bottom: 5px !important;
+  }
+  .cd-slider-nav {
+    display: none;
+}
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+.cyber-hero-slider .cd-full-width h2 {
+    margin-bottom: 0 !important;
+}
+.cyber-hero-slider a.btn.btn-primary {
+    padding: 5px 10px !important;
+    font-size: 16px !important;
+    line-height: 23px;
+}
+.cyber-hero-slider .cd-full-width h3 {
+    margin-bottom: 10px !important;
+}
+.arrow-left {
+    left: -90px !important;
+    top: -165px !important;
+}
+.arrows {
+    width: 270px !important;
+}
+.arrow-right {
+    right: 7px !important;
+    top: -165px !important;
+}
+.vid-list-container{
+  width: 70% !important;
+}
+.vid-list-container{
+  height: 50px !important;
+}
+.cyber-our-comics-row-2 .ts-padding {
+    padding: 20px;
+}
+.cyber-our-comics-row iframe {
+    height: 189px;
+}
+.home-our-comics-content h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.cyber-home-iframe-thumb {
+    cursor: pointer;
+    width: 100%;
+}
+.cyber-home-hero-villain .maincard {
+    width: 90%;
+    margin-bottom: 15px;
+}
+.thefront h3{
+  font-size: 25px;
+}
+.cyber-our-comics-row-1 {
+    padding-top: 25px;
+}
+.home-our-comics-content p {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.cyber-our-comics-row-1 p{
+  font-size: 15px;
+}
+section#home-cyber-heroes {
+    margin-top: -47px;
+    padding-top: 60px;
+}
+.cyber-home-hero-villain-row h3.hv-title{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.cyber-footer-widget h3{
+  font-size: 16px;
+}
+.cyber-footer-widget-right p{
+  font-size: 12px;
+}
+.cyber-footer-widget-right h3.widget-title{
+  margin-bottom: 0;
+}
+.cyber-footer-widget-right h4, .cyber-footer-widget-right .mb-4 h4 {
+    font-family: bebas neue,Sans-serif;
+    font-size: 16px;
+}
+.footer ul li a.nav-link {
+    padding-bottom: 0;
+}
+
+
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .cyber-home-iframe-thumb {
+    cursor: pointer;
+    width: 85%;
+}
+.arrow-left, .arrow-right{
+  top: -217px !important;
+}
+.cyber-our-comics-row-2 .cyber-home-iframe-thumb {
+    width: 100% !important;
+}
+.cyber-our-comics-row-2 .col-md-6.ts-padding {
+    padding-bottom: 15px;
+}
+.home-our-comics-content h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+section#home-cyber-heroes {
+    margin-top: -75px;
+    padding-top: 85px;
+}
+.thefront h3{
+  font-size: 25px;
+}
+.cyber-home-hero-villain .maincard{
+  height: 250px;
+  margin-bottom: 25px;
+}
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+  a.expolore-heroes-villains, a.cyber-expolore-btn {
+    padding: 10px 20px;
+}
+
+  body {
+    margin: 0 !important;
+  }
+  .cyber-header-title{
+    font-size: 14px;
+    line-height: 40px;
+  }
+  .cyber-header a img {
+    width: 45px;
+  }
+  .navbar-toggler {
+    background: #ff6363 !important;
+}
+.cd-hero-slider {
+    height: 320px !important;
+}
+nav>div a.nav-item.nav-link, nav>div a.nav-item.nav-link.active{
+  padding: 7px 15px !important;
+}
+.cyber-home-video-iframe {
+    width: 85% !important;
+    margin: auto !important;
+    height: 179px !important;
+}
+.vid-item{
+  width: 95px !important;
+  height: 56px;
+}
+h2.cyberhero-home-counter{
+  font-size: 25px !important;
+}
+.cyber-footer-widget-left h3.widget-title, .cyber-footer-widget-left a.btn{
+  font-size: 12px;
+}
+.cyber-home-partners h2{
+  font-size: 25px !important;
+  margin-left: 10px;
+}
+.cyber-home-partners img {
+    width: 70%;
+}
+.our-growing-network-section .facts.one.col {
+    padding: 10px;
+}
+.our-growing-network-section .facts h3 {
+    font-size: 15px;
+    margin-top: 0px;
+}
+.our-growing-network-section span.counter{
+  font-size: 25px !important;
+  margin-top: 0;
+}
+.wave-our-growing-network {
+    margin-top: -2px;
+}
+.cyber-our-comics-row-1 h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.cyber-our-comics-row-1 h3 {
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.copyright-info{
+  font-size: 12px;
+}
+
+}

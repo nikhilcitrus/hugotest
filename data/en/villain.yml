@@ -1,0 +1,24 @@
+title : "Our Cyber Villains"
+subtitle : "Discover and learn more about out Cyber Heroes! Get your own CYBER HERO CARTOON!"
+caption : "Discover"
+villain_member:
+  # villain member loop
+  - name : "Randall the R.A.T"
+    rear_name : "aka &quot;Remote Access Trojan&quot;"
+    image : "images/villains/rat.png"
+    class : "randall-rat"
+    description : "Randall is a regular guy. The Cyber Hero Adventures: Defenders of the Digital Universe is a ground breaking graphic novel series based on the TRUE story of Gary Berman who was the victim of a life-altering series of cyber attacks"
+  
+  # villain member loop
+  - name : "Boris the Bug"
+    rear_name : "Boris the messer-upper"
+    image : "images/villains/boris.png"
+    class : "boris-bug"
+    description : "Boris is a regular guy. The Cyber Hero Adventures: Defenders of the Digital Universe is a ground breaking graphic novel series based on the TRUE story of Gary Berman who was the victim of a life-altering series of cyber attacks"
+
+ # villain member loop
+  - name : "Wilbur Wannacry"
+    rear_name : "Wilbur as the Ransom Master"
+    image : "images/villains/wilbur.png"
+    class : "wilbur-wannacry"
+    description : "Wilbur is a regular guy. The Cyber Hero Adventures: Defenders of the Digital Universe is a ground breaking graphic novel series based on the TRUE story of Gary Berman who was the victim of a life-altering series of cyber attacks "

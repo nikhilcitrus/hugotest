@@ -1,0 +1,50 @@
+############################ Company Profile ########################
+our_origin_story:
+  enable : true
+  title : "Our Origin Story"
+  title_icon : "fa-suitcase" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+  src : "images/about/gary-super-dad.png"
+  alt : "Gary"
+  profile_tab:
+    # profile tab item loop
+    - name : "About Gary"
+      content : "Gary Berman is the CEO of the Cyberman Security, LLC and the Creator of The Cyber Hero Adventures: Defenders of the Digital Universe comic platform.He often refers to himself as the &#8220;Forrest Gump&#8221; of cybersecurity, given that his 25-year career has been focused on thought leadership in marketing communications and segmentation &#8211; not infosec or cbyersecurity ​for many of the world&#8217;s leading consumer brands."
+      
+    # profile tab item loop
+    - name : "The book that changed everything"
+      content : "After reading only 10 pages, Gary was lost! Rather than giving up, he was now on a mission, He spoke to a senior executive from the company that published the book and told him what happened. The executive started to laugh so hard that it sounded like tears were coming from his eyes! Gary is a really funny guy, so he joined in the laughter. He wanted to know why the executive was laughing. &#8220;It&#8217;s not really for beginners!&#8221; Gary put on his marketing hat and said, &#8220;Then why do you call it &#8220;Cybersecurity for Dummies?&#8221; That&#8217;s when it hit him that there had to be another way to distill complicated technology information into a communications platform, not just for the cybersecurity community, but for all businesses, governments, educators, law enforcement, the military and non-profits."
+      
+    # profile tab item loop
+    - name : "The Show"
+      content : "Gary created an Advisory Board of thought leaders within the cybersecurity community, including Tom Brennan, founder of Proactive Risk. Tom and others provided much-needed direction and inspiration. Now that the mission was clear &#8211; to distill complicated cybersecurity concepts into a more compelling communications approach &#8211; he sought out support from the cybersecurity community on LinkedIn. When he began, he had fewer than 10 connections. One at a time, every day, for almost six months, he invited Chief Security Officers (CSOs), Chief Information Security Officers (CISOs), Chief Executive Officers (CEO&#8217;s), Chief Technology Officers (CTOs), Chief Marketing Officers (CMOs) and leaders from the Department of Defense, law enforcement, academia and others to submit real-life, blinded stories of cybercrime in answer to three questions: 1. What happened 2. What were the consequences, and, 3. What were the lessons learned? The community really responded. As of March 2020, Gary has nearly 22,000 followers, including some of the key players in the cybersecurity ecosystem. His number one take-away: The ONLY time that people hear about cybercrime or hacking is when black hats win! So he decided to shine the light on the &#8220;Unsung Heroes&#8221; &#8211; all of those who toil in anonymity to keep us safe at work, home and school."
+
+############################ Mission And Strategy ########################
+mission_strategy:
+  enable : true
+  title : "Mission & Strategy"
+  src : "images/about/mission-strategy.png"
+  alt : "Mission & Strategyary"
+  mission_tab:
+    # mission strategy item loop
+    - name : "Our Mission"
+      content : "To shine the light on the UNSUNG HEROES who toil in anonymity to keep us safe at work, home and school and to say a big THANK YOU to the cybersecurity Community!"
+      
+    # mission strategy item loop
+    - name : "Our Strategy"
+      content : "We ​re-imagine complex, cyber security and tech information into REAL-LIFE, blinded cyber crime stories by creating and globally distributing empowering, engaging and entertaining superhero stories!"
+      
+############################ Sub Mission And Strategy ########################
+sub_mission_strategy:
+  enable : true
+  title : "Mission & Strategy"
+  src : "images/about/multicultural-book-covers.jpeg"
+  src_new : "images/about/dotcomm-gold-award.jpg"
+  alt : "Mission & Strategyary"
+  sub_mission_tab:
+    # mission strategy item loop
+    - name : "Our Mission"
+      content : "Our legacy was founded on shining the light on Diversity &amp; Inclusion. I was the CEO of a marketing company that produced some of the most pioneering information regarding the social, economic and political insights among African Americans, Hispanics, Asians, LGBTQ&#8217;s and other market segments. This was the company that was hacked and cloned by a trusted insider and a tech contractor. We are continuing to shine the light as many of our characters are diverse and women and so are the guests on our show!"
+      
+    # mission strategy item loop
+    - name : "Awards"
+      content : "​​Our award-winning EDITORIAL CONTENT is based upon the Department of Homeland Security Critical Infrastructure Sectors! of our characters are diverse and women and so are the guests on our show!"

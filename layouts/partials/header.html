@@ -1,0 +1,71 @@
+<div class="body-inner">
+
+<!-- Header start -->
+<header id="header" class="fixed-top header cyber-header" role="banner">
+  <a class="navbar-brand navbar-bg" href="{{ .Site.BaseURL | relLangURL }}">
+    <img class="img-fluid float-left"
+      src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}">
+      <span class="cyber-header-title">{{ .Site.Title }}</span></a>
+  <div class="cyber-nav-container">
+    <nav class="navbar navbar-expand-lg navbar-dark cyber-navbar">
+      <button class="navbar-toggler ml-auto border-0 rounded-0 text-white" type="button" data-toggle="collapse"
+        data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center cyber-navbar-collapse" id="navigation">
+        <ul class="navbar-nav ml-auto cyber-nav-ul new">
+          <li class="nav-item test">
+            <a class="nav-link" href="{{ site.BaseURL | relLangURL }}">{{ site.Params.Home }}</a>
+          </li>
+          {{ range .Site.Menus.main }}
+          {{ if .HasChildren }}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              {{ .Name }}
+            </a>
+            <div class="dropdown-menu">
+              {{ range .Children }}
+              <a class="dropdown-item" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+              {{ end }}
+            </div>
+          </li>
+          {{ else }}
+          <li class="nav-item">
+            {{ if eq  .Name "Join the Show" }}
+            <a class="nav-link join-the-show-menu-a" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+            {{ else }}
+            <a class="nav-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+            {{ end }}
+          </li>
+          {{ end }}
+          {{ end }}
+        </ul>
+        
+        <!-- Language List -->
+        {{ if .IsTranslated }}
+        <!-- <select style="display:none;" class="m-2 border-0" id="select-language" onchange="location = this.value;">
+          {{ $siteLanguages := site.Languages}}
+          {{ $pageLang := .Page.Lang}}
+          {{ range .Page.AllTranslations }}
+          {{ $translation := .}}
+          {{ range $siteLanguages }}
+          {{ if eq $translation.Lang .Lang }}
+          {{ $selected := false }}
+          {{ if eq $pageLang .Lang}}
+          <option id="{{ $translation.Language }}" value="{{ $translation.RelPermalink }}" selected>{{ .LanguageName }}
+          </option>
+          {{ else }}
+          <option id="{{ $translation.Language }}" value="{{ $translation.RelPermalink }}">{{ .LanguageName }}</option>
+          {{ end }}
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </select> -->
+        {{ end }}
+      </div>
+    </nav>
+  </div>
+</header>
+<!--/ Header end -->

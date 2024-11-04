@@ -1,0 +1,9 @@
+{{ range first 10 ( where .Site.RegularPages "Section" "comics" )}}
+<div class="col-md-3 comic-author-page-col">
+    <a class="comics-author-a" href="{{ .RelPermalink }}">
+        <img class="comics-img" alt="{{ .Title }}" src="{{ .Params.image | absURL }}">
+    </a>
+</div>
+{{ end }}
+
+

@@ -1,0 +1,36 @@
+.contact-us-header h1{
+    color: #FF5858;
+    font-size: 43px;
+    font-family: "Bebas Neue", Sans-serif;
+    font-weight: 600;
+}
+.contact-us-header p{
+	color: #fff;
+    font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+.contact-us-section {
+    background-color: #000;
+    padding-top: 25px;
+}
+section.contact-us-header {
+    background-color: #000;
+    padding-top: 150px;
+    padding-bottom: 0;
+}
+.contact-us-section img {
+    width: 100%;
+}
+.contact-form-button .btn {
+    border: 0;
+}
+.contact-us-section-main-col1 label {
+    color: #fff;
+}
+.contact-form-button .btn:hover{
+	color: #fff !important;
+    background-color: #e4ae53 !important;
+}

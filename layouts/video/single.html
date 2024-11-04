@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<section class="vidoe-inner-page-section" id="portfolio-item">
+  <div class="container video-single-page-container">
+    <!-- Portfolio item row start -->
+    <div class="row video-single-page-row">
+      <div class="col-md-12 video-single-page-col text-center">
+        <h1 class="video-single-page-h1">{{ .Title }}</h1>
+      </div>
+    </div>
+    <div class="row video-single-page-row2">
+      <!-- Portfolio item slider start -->
+      <div class="col-md-12 video-single-page-col2">
+        <iframe class="cyber-single-page-video" title="{{ .Title }}" loading="lazy" id="all_shows_frame" src="{{ .Params.embed | absURL }}?rel=0&showinfo=0&autohide=1"></iframe>
+      </div>
+      <!-- Portfolio item slider end -->
+    </div><!-- Portfolio item row end -->
+  </div><!-- Container end -->
+</section>
+
+{{ end }}

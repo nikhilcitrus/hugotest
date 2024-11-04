@@ -1,0 +1,28 @@
+############################ Comics Collection ########################
+show_details:
+  enable : true
+  title : "Be a GUEST on The Cyber Hero Show"
+  description : "Be part of our network and join a show as a guest!"
+  image : "images/show-main.png"
+  link : "/contact"
+  button_label: "Reach Out"
+  button_icon: "fa-envelope-open-o"
+
+default_embed : "oYP4_3olFiE"
+ 
+
+############################### Upcoming Shows ####################################
+upcoming_show:
+  enable : true
+  title : "Upcoming Live Shows"
+  bg_image : "images/team/our-comics-youtube.png"
+  default_embed : "oYP4_3olFiE"
+############################### Upcoming Shows End ####################################
+
+############################### Previous Shows ####################################
+previous_show:
+  enable : true
+  title : "Previous Live Shows"
+  bg_image : "images/team/our-comics-youtube.png"
+  default_embed : "Gl6e9A4TbSg"
+############################### Previous Shows End ####################################
