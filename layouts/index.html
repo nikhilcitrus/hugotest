@@ -5,15 +5,15 @@
 <!-- Slider start -->
 {{ if $data.homepage.slider.enable }}
 {{ with $data.homepage.slider }}
-<section id="home" class="p-0 cyber-home-slider">
-  <div id="main-slide" class="cd-hero cyber-home-main-slide">
-    <ul class="cd-hero-slider cyber-hero-slider">
+<section id="home" class="p-0">
+  <div id="main-slide" class="cd-hero">
+    <ul class="cd-hero-slider">
       {{ range $index, $elements:= .slider_item }}
       {{ $imgPosition := .image_position | lower }}
       <li class="{{if eq $index 0}}selected{{end}}">
-        <!-- <div class="overlay2">
+        <div class="overlay2">
           <img src="{{ .bg_image | absURL }}" alt="slider">
-        </div> -->
+        </div>
         {{if eq $imgPosition "right"}}
         {{ with .image }}
         <div class="cd-half-width cd-img-container img-right">
@@ -40,7 +40,7 @@
     </ul>
     <!--/ cd-hero-slider -->
 
-    <!-- <div class="cd-slider-nav">
+    <div class="cd-slider-nav">
       <nav>
         <ul>
           {{ range $index, $elements:= .slider_item }}
@@ -49,138 +49,13 @@
           {{ end }}
         </ul>
       </nav>
-    </div>  -->
-    <!-- .cd-slider-nav -->
+    </div> <!-- .cd-slider-nav -->
   </div>
   <!--/ Main slider end -->
 </section>
 {{ end }}
 {{ end }}
 <!--/ Slider end -->
-
-<!-- All Shows start-->
-
-<section class="cyber-home-video-section">
-  <div class="container-fluid cyber-home-video-container">
-    <div class="row cyber-home-video-row">
-      <div class="col-md-12 cyber-home-video-col">
-        <nav>
-          <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-            {{ if $data.homepage.recent_show.enable }}
-            <a class="nav-item nav-link active" id="nav-recent-shows-tab" data-toggle="tab" href="#nav-recent-shows" role="tab" aria-controls="nav-recent-shows" aria-selected="true">{{ $data.homepage.recent_show.title }}</a>
-            {{ end }}
-            {{ if $data.homepage.upcoming_show.enable }}
-            <a class="nav-item nav-link" id="nav-upcoming-shows-tab" data-toggle="tab" href="#nav-upcoming-shows" role="tab" aria-controls="nav-upcoming-shows" aria-selected="false">{{ $data.homepage.upcoming_show.title }}</a>
-            {{ end }}
-            {{ if $data.homepage.previous_show.enable }}
-            <a class="nav-item nav-link" id="nav-previous-shows-tab" data-toggle="tab" href="#nav-previous-shows" role="tab" aria-controls="nav-previous-shows" aria-selected="false">{{ $data.homepage.previous_show.title }}</a>
-            {{ end }}
-          </div>
-        </nav>
-        
-        {{ if $data.homepage.recent_show.enable }}
-        <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-          <div class="tab-pane fade show active recent-show-tab-pane" id="nav-recent-shows" role="tabpanel" aria-labelledby="nav-recent-shows-tab">
-            <div class="cyber-home-iframe-container">
-              <!-- <iframe class="cyber-home-video-iframe" title="recent shows" loading="lazy" id="all_shows_frame" src="{{ $data.homepage.recent_show.default_src | absURL }}?rel=0&showinfo=0&autohide=1"></iframe> -->
-              <img class="cyber-home-iframe-thumb recent_shows_iframe_thumb" data-src="{{ $data.homepage.recent_show.default_src | absURL }}" id="recent_shows_iframe_thumb"  src="{{ $data.homepage.recent_show.default_img | absURL }}" alt="{{ $data.homepage.recent_show.title }}">
-              <iframe style="display: none;" class="cyber-home-video-iframe" title="{{ $data.homepage.recent_show.title }}" loading="lazy" id="all_shows_frame" src=""></iframe>
-            </div>
-            <!-- THE PLAYLIST -->
-            <div class="container cyber-video-main-container">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="vid-list-container">
-                    <div class="vid-list">
-                      {{ partial "recent_show.html" . }}
-                    </div>
-                  </div>
-                  <!-- LEFT AND RIGHT ARROWS -->
-                  <div class="arrows">
-                    <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
-                    <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {{ end }}
-          {{ if $data.homepage.upcoming_show.enable }}
-          <div class="tab-pane fade upcoming-show-tab-pane" id="nav-upcoming-shows" role="tabpanel" aria-labelledby="nav-upcoming-shows-tab">
-            <div class="cyber-home-iframe-container">
-              <!-- <iframe class="cyber-home-video-iframe" title="upcoming shows" loading="lazy" id="upcoming_shows_frame" src="{{ $data.homepage.upcoming_show.default_src | absURL }}?rel=0&showinfo=0&autohide=1" width="100%"></iframe> -->
-              <!-- <img width="auto" src="{{ $data.homepage.recent_show.default_img | absURL }}" alt="Gary"> -->
-              <img class="cyber-home-iframe-thumb upcoming_shows_iframe_thumb" data-src="{{ $data.homepage.upcoming_show.default_src | absURL }}" id="upcoming_shows_iframe_thumb" src="{{ $data.homepage.upcoming_show.default_img | absURL }}" alt="{{ $data.homepage.upcoming_show.title }}">
-              <iframe style="display: none;" class="cyber-home-video-iframe" title="{{ $data.homepage.upcoming_show.title }}" loading="lazy" id="upcoming_shows_frame" src=""></iframe>
- 
-            </div>
-            <!-- THE PLAYLIST -->
-            <div class="container cyber-video-main-container">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="vid-list-container">
-                    <div class="vid-list">
-                      {{ partial "upcoming_show.html" . }}
-                    </div>
-                  </div>
-                  <!-- LEFT AND RIGHT ARROWS -->
-                  <div class="arrows">
-                    <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
-                    <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {{ end }}
-          {{ if $data.homepage.previous_show.enable }}
-          <div class="tab-pane fade previous-show-tab-pane" id="nav-previous-shows" role="tabpanel" aria-labelledby="nav-previous-shows-tab">
-            <div class="cyber-home-iframe-container">
-              <!-- <iframe class="cyber-home-video-iframe" title="previous shows" loading="lazy" id="previous_shows_frame" src="{{ $data.homepage.previous_show.default_src | absURL }}?rel=0&showinfo=0&autohide=1" width="100%"></iframe> -->
-              <!-- <img width="auto" src="{{ $data.homepage.recent_show.default_img | absURL }}" alt="Gary"> -->
-              <img class="cyber-home-iframe-thumb previous_shows_iframe_thumb" data-src="{{ $data.homepage.previous_show.default_src | absURL }}" id="previous_shows_iframe_thumb" src="{{ $data.homepage.previous_show.default_img | absURL }}" alt="{{ $data.homepage.previous_show.title }}">
-              <iframe style="display: none;" class="cyber-home-video-iframe" title="{{ $data.homepage.previous_show.title }}" loading="lazy" id="previous_shows_frame" src=""></iframe>
-            </div>
-            <!-- THE PLAYLIST -->
-            <div class="container cyber-video-main-container">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="vid-list-container">
-                    <div class="vid-list">
-                      {{ partial "previous_show.html" . }}
-                    </div>
-                  </div>
-                  <!-- LEFT AND RIGHT ARROWS -->
-                  <div class="arrows">
-                    <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
-                    <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {{ end }}
-        </div> <!--Tab Content end-->
-      </div> <!-- col end-->
-    </div><!-- row end-->
-  </div>
-</section>
-<!-- All Shows end-->
-
-
-
-<!-- Testimonial start-->
-{{ if $data.homepage.testimonial.enable }}
-<!-- testimonial Start-->
-<section class="cyber-home-testimonial-section">
-  <div class="container cyber-home-testimonial-container">
-    <div class="cyber-carousel-items-home cyber-carousel-items cyber-testimonial-items">
-      {{ partial "testimonial.html" . }}
-    </div>
-  </div>
-</section>
-{{ end }}
-<!-- Testimonial end-->
 
 
 <!-- Service box start -->
@@ -226,20 +101,6 @@
 {{ end }}
 <!--/ Counter end -->
 
-<div class="container-fluid wave-our-growing-network">
-  <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="none">
-    <path class="elementor-shape-fill" d="M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7	s-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7	c-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z M260.8,11.3	c-0.7-1-2-0.4-4.3-0.4c-2.3,0-6.1-1.2-5.8-1.1c0.3,0.1,3.1,1.5,6,1.9C259.7,12.2,261.4,12.3,260.8,11.3z M242.4,8.6	c0,0-2.4-0.2-5.6-0.9c-3.2-0.8-10.3-2.8-15.1-3.5c-8.2-1.1-15.8,0-15.1,0.1c0.8,0.1,9.6-0.6,17.6,1.1c3.3,0.7,9.3,2.2,12.4,2.7	C239.9,8.7,242.4,8.6,242.4,8.6z M185.2,8.5c1.7-0.7-13.3,4.7-18.5,6.1c-2.1,0.6-6.2,1.6-10,2c-3.9,0.4-8.9,0.4-8.8,0.5	c0,0.2,5.8,0.8,11.2,0c5.4-0.8,5.2-1.1,7.6-1.6C170.5,14.7,183.5,9.2,185.2,8.5z M199.1,6.9c0.2,0-0.8-0.4-4.8,1.1	c-4,1.5-6.7,3.5-6.9,3.7c-0.2,0.1,3.5-1.8,6.6-3C197,7.5,199,6.9,199.1,6.9z M283,6c-0.1,0.1-1.9,1.1-4.8,2.5s-6.9,2.8-6.7,2.7	c0.2,0,3.5-0.6,7.4-2.5C282.8,6.8,283.1,5.9,283,6z M31.3,11.6c0.1-0.2-1.9-0.2-4.5-1.2s-5.4-1.6-7.8-2C15,7.6,7.3,8.5,7.7,8.6	C8,8.7,15.9,8.3,20.2,9.3c2.2,0.5,2.4,0.5,5.7,1.6S31.2,11.9,31.3,11.6z M73,9.2c0.4-0.1,3.5-1.6,8.4-2.6c4.9-1.1,8.9-0.5,8.9-0.8	c0-0.3-1-0.9-6.2-0.3S72.6,9.3,73,9.2z M71.6,6.7C71.8,6.8,75,5.4,77.3,5c2.3-0.3,1.9-0.5,1.9-0.6c0-0.1-1.1-0.2-2.7,0.2	C74.8,5.1,71.4,6.6,71.6,6.7z M93.6,4.4c0.1,0.2,3.5,0.8,5.6,1.8c2.1,1,1.8,0.6,1.9,0.5c0.1-0.1-0.8-0.8-2.4-1.3	C97.1,4.8,93.5,4.2,93.6,4.4z M65.4,11.1c-0.1,0.3,0.3,0.5,1.9-0.2s2.6-1.3,2.2-1.2s-0.9,0.4-2.5,0.8C65.3,10.9,65.5,10.8,65.4,11.1	z M34.5,12.4c-0.2,0,2.1,0.8,3.3,0.9c1.2,0.1,2,0.1,2-0.2c0-0.3-0.1-0.5-1.6-0.4C36.6,12.8,34.7,12.4,34.5,12.4z M152.2,21.1	c-0.1,0.1-2.4-0.3-7.5-0.3c-5,0-13.6-2.4-17.2-3.5c-3.6-1.1,10,3.9,16.5,4.1C150.5,21.6,152.3,21,152.2,21.1z"></path>
-    <path class="elementor-shape-fill" d="M269.6,18c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C267.7,18.8,269.7,18,269.6,18z"></path>
-    <path class="elementor-shape-fill" d="M227.4,9.8c-0.2-0.1-4.5-1-9.5-1.2c-5-0.2-12.7,0.6-12.3,0.5c0.3-0.1,5.9-1.8,13.3-1.2	S227.6,9.9,227.4,9.8z"></path>
-    <path class="elementor-shape-fill" d="M204.5,13.4c-0.1-0.1,2-1,3.2-1.1c1.2-0.1,2,0,2,0.3c0,0.3-0.1,0.5-1.6,0.4	C206.4,12.9,204.6,13.5,204.5,13.4z"></path>
-    <path class="elementor-shape-fill" d="M201,10.6c0-0.1-4.4,1.2-6.3,2.2c-1.9,0.9-6.2,3.1-6.1,3.1c0.1,0.1,4.2-1.6,6.3-2.6	S201,10.7,201,10.6z"></path>
-    <path class="elementor-shape-fill" d="M154.5,26.7c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C152.6,27.5,154.6,26.8,154.5,26.7z"></path>
-    <path class="elementor-shape-fill" d="M41.9,19.3c0,0,1.2-0.3,2.9-0.1c1.7,0.2,5.8,0.9,8.2,0.7c4.2-0.4,7.4-2.7,7-2.6	c-0.4,0-4.3,2.2-8.6,1.9c-1.8-0.1-5.1-0.5-6.7-0.4S41.9,19.3,41.9,19.3z"></path>
-    <path class="elementor-shape-fill" d="M75.5,12.6c0.2,0.1,2-0.8,4.3-1.1c2.3-0.2,2.1-0.3,2.1-0.5c0-0.1-1.8-0.4-3.4,0	C76.9,11.5,75.3,12.5,75.5,12.6z"></path>
-    <path class="elementor-shape-fill" d="M15.6,13.2c0-0.1,4.3,0,6.7,0.5c2.4,0.5,5,1.9,5,2c0,0.1-2.7-0.8-5.1-1.4	C19.9,13.7,15.7,13.3,15.6,13.2z"></path>
-  </svg>
-</div>
-
 <!-- Feature box start -->
 {{ if $data.homepage.feature.enable }}
 {{ with $data.homepage.feature }}
@@ -263,36 +124,29 @@
 {{ end }}
 <!--/ Feature box end -->
 
-{{ if $data.homepage.our_comics.enable }}
-{{ with $data.homepage.our_comics }}
-<section id="image-block" class="image-block p-0 cyber-our-comics">
-  <div class="container-fluid cyber-our-comincs-container">
-    <div class="row cyber-our-comics-row cyber-our-comics-row-1">
-      <div class="col-md-12 text-center">
+{{ if $data.homepage.about.enable }}
+{{ with $data.homepage.about }}
+<section id="image-block" class="image-block p-0">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 ts-padding"
+        style="min-height:400px;background:url('{{ .bg_image | absURL }}') 50% 50% / cover no-repeat;">
+      </div>
+      <div class="col-md-6 ts-padding img-block-right">
+        <div class="img-block-head text-center">
           <h2>{{ .title | markdownify }}</h2>
           <h3>{{ .subtitle | markdownify }}</h3>
           <p>{{ .content | markdownify }}</p>
-      </div>
-    </div>
-    <div class="row cyber-our-comics-row cyber-our-comics-row-2 ">
-      <div class="col-md-6 ts-padding">
-        <!-- <iframe title="{{ .title | markdownify }}" width="100%" height="325" src="{{ .src }}" 
-        allowfullscreen></iframe> -->
-
-        <img class="cyber-home-iframe-thumb our_comics_iframe_thumb" data-src="{{ $data.homepage.our_comics.src | absURL }}" id="our_comics_iframe_thumb"  src="{{ $data.homepage.our_comics.default_src | absURL }}" alt="{{ .title | markdownify }}">
-        <iframe width="100%" height="325" style="display: none;" class="our_comics_frame_home" title="{{ .title | markdownify }}" loading="lazy" id="our_comics_frame" src=""></iframe>
-
-      </div>
-      <div class="col-md-6 ts-padding float-left">
+        </div>
         <div class="gap-30"></div>
-        {{ range .our_comics_item }}
-        <div class="home-our-comics-content">
+        {{ range .about_item }}
+        <div class="image-block-content">
+          <span class="feature-icon float-left"><i class="fa {{ .icon }}"></i></span>
+          <div class="feature-content">
             <h3>{{ .name | markdownify }}</h3>
             <p>{{ .content | markdownify }}</p>
+          </div>
         </div>
-        {{ end }}
-        {{ range .button }}
-        <a href="/comics" class="btn btn-info cyber-expolore-btn">{{ .label }} <img class="comics-paper-icon" src="{{ .paper_icon | absURL }}" alt="paper-icon"/></i></a>
         {{ end }}
       </div>
     </div>
@@ -302,63 +156,7 @@
 {{ end }}
 <!--/ Image block end -->
 
-<div class="container-fluid wave-heroes">
-  <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-    <path class="elementor-shape-fill" d="M761.9,44.1L643.1,27.2L333.8,98L0,3.8V0l1000,0v3.9"></path>
-  </svg>
-</div>
 
-<!-- Heores start -->
-{{ if $data.homepage.hero.enable }}
-<section id="home-cyber-heroes" class="cyber-home-hero-villain">
-  <div class="container cyber-home-hero-villain-container">
-    <div class="row cyber-home-hero-villain-row cyber-home-hero-villain-row-1">
-      <div class="col-md-12">
-      <h2 class="hv-caption">{{ $data.homepage.hero.caption | markdownify }}</h2>
-      <h3 class="hv-title">{{ $data.homepage.hero.title | markdownify }}</h3>
-      <p class="hv-subtitle">{{ $data.homepage.hero.subtitle | markdownify }}</p>
-    </div>
-  </div>
-  <div class="clearfix"></div>
-      {{ partial "hero.html" . (dict "c" . "g" $ ) }}
-  <div class="clearfix"></div>
-  <div class="row">
-    <div class="col-sm-12 text-center">
-      <a href="/comics" class="btn btn-info expolore-heroes-villains">{{ $data.homepage.villain.button_label }}&nbsp;&nbsp;<i class="fa {{ $data.homepage.villain.button_icon }}"></i></a>
-  </div>
-</section>
-{{ end }}
-<!--/ Heroes end -->
-
-<!-- Villains start -->
-{{ if $data.homepage.villain.enable }}
-<section id="home-cyber-villains" class="cyber-home-hero-villain">
-  <div class="container cyber-home-hero-villain-container">
-    <div class="row cyber-home-hero-villain-row cyber-home-hero-villain-row-1">
-      <div class="col-md-12">
-      <h2 class="hv-caption">{{ $data.homepage.villain.caption | markdownify }}</h2>
-      <h3 class="hv-title">{{ $data.homepage.villain.title | markdownify }}</h3>
-      <p class="hv-subtitle">{{ $data.homepage.villain.subtitle | markdownify }}</p>
-    </div>
-  </div>
-  <div class="clearfix"></div>
-      {{ partial "villain.html" . }}
-      <div class="clearfix"></div>
-      <div class="row cyber-home-hero-villain-row cyber-home-hero-villain-row-2">
-        <div class="col-sm-12 text-center"> 
-          <a href="/comics" class="btn btn-info expolore-heroes-villains">{{ $data.homepage.villain.button_label }}&nbsp;&nbsp;<i class="fa {{ $data.homepage.villain.button_icon }}"></i></a>
-        </div>
-      </div>
-</section>
-{{ end }}
-<!--/ Villains end -->
-
-
-<div class="container-fluid wave-villains">
-  <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-    <path class="elementor-shape-fill" d="M738,99l262-93V0H0v5.6L738,99z"></path>
-  </svg>
-</div>
 <!-- Team start -->
 {{ if $data.homepage.team.enable }}
 {{ partial "team.html" . }}
@@ -369,7 +167,6 @@
 {{ if $data.homepage.call_to_action.enable }}
 {{ with $data.homepage.call_to_action }}
 <section class="parallax" style="background-image: url('{{ .bg_image | absURL}}');">
-  <!-- <section class="parallax"> -->
   <div class="parallax-overlay"></div>
   <div class="container">
     <div class="row">
@@ -395,29 +192,20 @@
 {{ end }}
 <!--/ Pricing table end -->
 
-<div class="cyber-partners-wave container-fluid">
 
-  <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="none">
-    <path class="elementor-shape-fill" d="M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7	s-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7	c-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z M260.8,11.3	c-0.7-1-2-0.4-4.3-0.4c-2.3,0-6.1-1.2-5.8-1.1c0.3,0.1,3.1,1.5,6,1.9C259.7,12.2,261.4,12.3,260.8,11.3z M242.4,8.6	c0,0-2.4-0.2-5.6-0.9c-3.2-0.8-10.3-2.8-15.1-3.5c-8.2-1.1-15.8,0-15.1,0.1c0.8,0.1,9.6-0.6,17.6,1.1c3.3,0.7,9.3,2.2,12.4,2.7	C239.9,8.7,242.4,8.6,242.4,8.6z M185.2,8.5c1.7-0.7-13.3,4.7-18.5,6.1c-2.1,0.6-6.2,1.6-10,2c-3.9,0.4-8.9,0.4-8.8,0.5	c0,0.2,5.8,0.8,11.2,0c5.4-0.8,5.2-1.1,7.6-1.6C170.5,14.7,183.5,9.2,185.2,8.5z M199.1,6.9c0.2,0-0.8-0.4-4.8,1.1	c-4,1.5-6.7,3.5-6.9,3.7c-0.2,0.1,3.5-1.8,6.6-3C197,7.5,199,6.9,199.1,6.9z M283,6c-0.1,0.1-1.9,1.1-4.8,2.5s-6.9,2.8-6.7,2.7	c0.2,0,3.5-0.6,7.4-2.5C282.8,6.8,283.1,5.9,283,6z M31.3,11.6c0.1-0.2-1.9-0.2-4.5-1.2s-5.4-1.6-7.8-2C15,7.6,7.3,8.5,7.7,8.6	C8,8.7,15.9,8.3,20.2,9.3c2.2,0.5,2.4,0.5,5.7,1.6S31.2,11.9,31.3,11.6z M73,9.2c0.4-0.1,3.5-1.6,8.4-2.6c4.9-1.1,8.9-0.5,8.9-0.8	c0-0.3-1-0.9-6.2-0.3S72.6,9.3,73,9.2z M71.6,6.7C71.8,6.8,75,5.4,77.3,5c2.3-0.3,1.9-0.5,1.9-0.6c0-0.1-1.1-0.2-2.7,0.2	C74.8,5.1,71.4,6.6,71.6,6.7z M93.6,4.4c0.1,0.2,3.5,0.8,5.6,1.8c2.1,1,1.8,0.6,1.9,0.5c0.1-0.1-0.8-0.8-2.4-1.3	C97.1,4.8,93.5,4.2,93.6,4.4z M65.4,11.1c-0.1,0.3,0.3,0.5,1.9-0.2s2.6-1.3,2.2-1.2s-0.9,0.4-2.5,0.8C65.3,10.9,65.5,10.8,65.4,11.1	z M34.5,12.4c-0.2,0,2.1,0.8,3.3,0.9c1.2,0.1,2,0.1,2-0.2c0-0.3-0.1-0.5-1.6-0.4C36.6,12.8,34.7,12.4,34.5,12.4z M152.2,21.1	c-0.1,0.1-2.4-0.3-7.5-0.3c-5,0-13.6-2.4-17.2-3.5c-3.6-1.1,10,3.9,16.5,4.1C150.5,21.6,152.3,21,152.2,21.1z"></path>
-    <path class="elementor-shape-fill" d="M269.6,18c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C267.7,18.8,269.7,18,269.6,18z"></path>
-    <path class="elementor-shape-fill" d="M227.4,9.8c-0.2-0.1-4.5-1-9.5-1.2c-5-0.2-12.7,0.6-12.3,0.5c0.3-0.1,5.9-1.8,13.3-1.2	S227.6,9.9,227.4,9.8z"></path>
-    <path class="elementor-shape-fill" d="M204.5,13.4c-0.1-0.1,2-1,3.2-1.1c1.2-0.1,2,0,2,0.3c0,0.3-0.1,0.5-1.6,0.4	C206.4,12.9,204.6,13.5,204.5,13.4z"></path>
-    <path class="elementor-shape-fill" d="M201,10.6c0-0.1-4.4,1.2-6.3,2.2c-1.9,0.9-6.2,3.1-6.1,3.1c0.1,0.1,4.2-1.6,6.3-2.6	S201,10.7,201,10.6z"></path>
-    <path class="elementor-shape-fill" d="M154.5,26.7c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C152.6,27.5,154.6,26.8,154.5,26.7z"></path>
-    <path class="elementor-shape-fill" d="M41.9,19.3c0,0,1.2-0.3,2.9-0.1c1.7,0.2,5.8,0.9,8.2,0.7c4.2-0.4,7.4-2.7,7-2.6	c-0.4,0-4.3,2.2-8.6,1.9c-1.8-0.1-5.1-0.5-6.7-0.4S41.9,19.3,41.9,19.3z"></path>
-    <path class="elementor-shape-fill" d="M75.5,12.6c0.2,0.1,2-0.8,4.3-1.1c2.3-0.2,2.1-0.3,2.1-0.5c0-0.1-1.8-0.4-3.4,0	C76.9,11.5,75.3,12.5,75.5,12.6z"></path>
-    <path class="elementor-shape-fill" d="M15.6,13.2c0-0.1,4.3,0,6.7,0.5c2.4,0.5,5,1.9,5,2c0,0.1-2.7-0.8-5.1-1.4	C19.9,13.7,15.7,13.3,15.6,13.2z"></path>
-  </svg>
+<!-- Testimonial start-->
+{{ if $data.homepage.testimonial.enable }}
+{{ partial "testimonial.html" . }}
+{{ end }}
+<!--/ Testimonial end-->
 
-</div>
 
-<!-- Partners start -->
-{{ if $data.homepage.partner_logo_slider.enable }}
-{{ with $data.homepage.partner_logo_slider }}
-<section id="clients" class="clients cyber-home-partners">
-  <div class="container cyber-home-partners-container">
-    <div class="row wow fadeInLeft cyber-home-partners-row">
-      <h2>{{ .caption | markdownify }}</h2>
+<!-- Clients start -->
+{{ if $data.homepage.clients_logo_slider.enable }}
+{{ with $data.homepage.clients_logo_slider }}
+<section id="clients" class="clients">
+  <div class="container">
+    <div class="row wow fadeInLeft">
       <div id="client-carousel" class="col-sm-12 owl-carousel owl-theme text-center client-carousel">
         {{ range .slider_item }}
         <figure class="m-0 item client_logo">
